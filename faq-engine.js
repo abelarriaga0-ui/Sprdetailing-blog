@@ -11,7 +11,7 @@ async function renderUniversalFAQ() {
         
         // Empezamos directamente con el contenedor de rejilla
         let html = `
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin-top: 0px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; margin-top: 12px;">
         `;
 
         const otros = blogs.filter(b => b.url !== currentPath);
