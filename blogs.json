@@ -16,5 +16,11 @@
     "descripcion": "Técnicas de lijado al agua y sellado cerámico para devolver la transparencia total.",
     "url": "faros.html",
     "categoria": "Exterior"
+  },
+  {
+    "titulo": "¿Cómo lograr un brillo de espejo en la pintura?",
+    "descripcion": "Técnicas avanzadas de corrección de laca y física de reflexión lumínica.",
+    "url": "pulido-pintura.html",
+    "categoria": "Detailing"
   }
 ]
