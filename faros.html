@@ -182,48 +182,8 @@
     &copy; 2026 Todos los derechos reservados.</p>
 </footer>
 
-<script>
-    async function loadFAQs() {
-        const placeholder = document.getElementById('faq-placeholder');
-        const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+<div id="faq-engine-container"></div>
 
-        try {
-            const response = await fetch('blogs.json');
-            const blogs = await response.json();
-            
-            let html = '';
-            const otrosBlogs = blogs.filter(blog => blog.url !== currentPath);
-
-            otrosBlogs.forEach(blog => {
-                html += `
-                <a href="${blog.url}" style="text-decoration: none; color: inherit; display: block; margin-bottom: 20px;">
-                    <div style="background: white; padding: 25px; border-radius: 10px; border: 1px solid #eee; transition: 0.4s; cursor: pointer; display: flex; justify-content: space-between; align-items: center;" 
-                         onmouseover="this.style.borderColor='#e67e22'; this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.07)';" 
-                         onmouseout="this.style.borderColor='#eee'; this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-                        
-                        <div style="flex: 1;">
-                            <span style="display: block; font-weight: bold; font-size: 1.2rem; margin-bottom: 8px; color: #1a1a1a;">
-                                ${blog.titulo}
-                            </span>
-                            <span style="font-size: 1rem; color: #666; line-height: 1.5;">
-                                ${blog.descripcion}
-                            </span>
-                        </div>
-                        
-                        <span style="color: #e67e22; font-size: 1.8rem; margin-left: 25px; font-weight: bold;">→</span>
-                    </div>
-                </a>
-                `;
-            });
-
-            placeholder.innerHTML = html || '<p style="color:#999;">Nuevas publicaciones técnicas en revisión...</p>';
-        } catch (error) {
-            console.error('Error:', error);
-            placeholder.innerHTML = '';
-        }
-    }
-    loadFAQs();
-</script>
-
+<script src="faq-engine.js"></script>
 </body>
 </html>
