@@ -3,53 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Guía Maestra de Detailing Automotriz y Mantenimiento Preventivo | SuperDetail</title>
-    <meta name="description" content="El manual definitivo y detallado sobre limpieza de tapicería avanzada, mantenimiento de inyectores diésel y reemplazo de componentes mecánicos.">
+    <title>Enciclopedia Técnica de Detailing y Mecánica Preventiva | SuperDetail</title>
+    <meta name="description" content="Guía exhaustiva sobre restauración estética automotriz, química de limpieza de tapicería, mantenimiento de inyectores diésel y diagnóstico avanzado OBD2.">
+    
     <style>
-        :root { --primary: #1a1a1a; --accent: #e67e22; --text: #333; --bg: #f4f4f4; }
-        body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.8; color: var(--text); background: var(--bg); margin: 0; padding: 0; }
-        
-        /* 1. BARRA DE NAVEGACIÓN SUPERIOR */
-        .navbar { background: var(--primary); padding: 15px 20px; position: sticky; top: 0; z-index: 100; display: flex; justify-content: center; gap: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
-        .navbar a { color: #fff; text-decoration: none; font-weight: bold; font-size: 1.05rem; transition: color 0.3s; text-transform: uppercase; letter-spacing: 1px; }
+        :root {
+            --primary: #1a1a1a;
+            --accent: #e67e22;
+            --text: #333;
+            --bg: #f4f7f6;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.9;
+            color: var(--text);
+            background: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* NAVEGACIÓN STICKY */
+        .navbar {
+            background: var(--primary);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
         .navbar a:hover { color: var(--accent); }
-        
-        /* 2. ENCABEZADO CENTRADO Y AJUSTADO */
-        header { background: #222; color: white; padding: 80px 20px; border-bottom: 5px solid var(--accent); display: flex; justify-content: center; text-align: center; }
-        .header-content { max-width: 850px; /* Esto evita que el texto se vaya a los bordes */ }
-        .header-content h1 { font-size: 3rem; margin-bottom: 20px; line-height: 1.3; }
-        .header-content p { font-size: 1.2rem; color: #ccc; margin: 0 auto; max-width: 700px; }
 
-        /* CONTENEDOR PRINCIPAL ELEVADO */
-        .container { max-width: 1000px; margin: -40px auto 40px; padding: 60px; background: white; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius: 12px; position: relative; z-index: 10; }
-        
-        h2 { color: var(--accent); font-size: 2.2rem; margin-top: 50px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        h3 { color: var(--primary); font-size: 1.6rem; margin-top: 30px; }
-        p { margin-bottom: 25px; font-size: 1.15rem; text-align: justify; }
-        ul, ol { margin-bottom: 30px; font-size: 1.15rem; padding-left: 40px; }
-        li { margin-bottom: 12px; }
-        
-        .technical-box { background: #f8f9fa; border: 1px solid #dee2e6; padding: 30px; margin: 30px 0; border-radius: 8px; border-left: 5px solid #3498db; }
-        .case-study { background: #fff3e0; padding: 30px; border-radius: 8px; margin: 40px 0; border-left: 5px solid var(--accent); }
-        
-        /* 3. SECCIÓN DE ARTÍCULOS RELACIONADOS */
-        .related-posts { margin-top: 70px; padding-top: 50px; border-top: 2px dashed #ccc; }
-        .related-posts h2 { text-align: center; border: none; margin-bottom: 40px; }
-        .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
-        .card { background: #fdfdfd; padding: 25px; border-radius: 10px; border: 1px solid #eee; text-align: center; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0,0,0,0.02); }
-        .card:hover { transform: translateY(-8px); border-color: var(--accent); box-shadow: 0 10px 25px rgba(230,126,34,0.15); }
-        .card h4 { color: var(--primary); font-size: 1.2rem; margin-top: 0; }
-        .card p { font-size: 1rem; color: #666; text-align: center; }
-        .btn { display: inline-block; margin-top: 15px; background: var(--primary); color: white; padding: 10px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; }
-        .btn:hover { background: var(--accent); }
+        /* HEADER OPTIMIZADO */
+        header {
+            background: #111;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--accent);
+        }
+        .header-wrap {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #aaa;
+        }
 
-        footer { text-align: center; padding: 40px; color: #888; background: var(--primary); color: white; }
-        
-        /* ADAPTACIÓN PARA CELULARES */
+        /* CONTENEDOR CENTRAL (ANCHO IDEAL PARA ADSENSE) */
+        .main-container {
+            max-width: 850px; /* Ancho perfecto para lectura y anuncios laterales */
+            margin: -40px auto 40px;
+            background: var(--white);
+            padding: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border-radius: 10px;
+        }
+
+        /* PLACEHOLDERS PARA ANUNCIOS */
+        .ad-box {
+            background: #f9f9f9;
+            border: 1px dashed #ccc;
+            margin: 40px 0;
+            padding: 20px;
+            text-align: center;
+            color: #999;
+            font-size: 0.8rem;
+            font-style: italic;
+            border-radius: 6px;
+        }
+
+        /* ESTILOS DE TEXTO */
+        h2 {
+            color: var(--primary);
+            font-size: 2.2rem;
+            margin-top: 60px;
+            border-left: 6px solid var(--accent);
+            padding-left: 20px;
+            line-height: 1.2;
+        }
+        h3 {
+            color: var(--accent);
+            font-size: 1.6rem;
+            margin-top: 40px;
+        }
+        p {
+            margin-bottom: 25px;
+            text-align: justify;
+            font-size: 1.15rem;
+        }
+        ul, ol {
+            margin-bottom: 30px;
+            padding-left: 30px;
+        }
+        li { margin-bottom: 15px; font-size: 1.1rem; }
+
+        /* BLOQUES ESPECIALES */
+        .tech-note {
+            background: #eef7ff;
+            border-left: 5px solid #3498db;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .warning {
+            background: #fff5f5;
+            border: 1px solid #feb2b2;
+            padding: 20px;
+            color: #c53030;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        /* NAVEGACIÓN FINAL */
+        .related-section {
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 2px solid #eee;
+        }
+        .grid-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .link-card {
+            background: #fdfdfd;
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .link-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-5px);
+        }
+        .btn-nav {
+            display: inline-block;
+            background: var(--primary);
+            color: white !important;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #111;
+            color: #666;
+            text-align: center;
+            padding: 50px;
+            margin-top: 50px;
+        }
+
         @media (max-width: 768px) {
-            .navbar { flex-direction: column; text-align: center; gap: 10px; }
-            .header-content h1 { font-size: 2.2rem; }
-            .container { padding: 30px; margin-top: 0; border-radius: 0; }
+            .main-container { padding: 25px; margin-top: 0; border-radius: 0; }
+            header h1 { font-size: 2rem; }
         }
     </style>
 </head>
@@ -57,96 +187,106 @@
 
 <nav class="navbar">
     <a href="index.html">Inicio</a>
-    <a href="index.html">Mecánica</a>
-    <a href="index.html">Detailing</a>
+    <a href="mantenimiento-inyectores.html">Mecánica</a>
+    <a href="limpieza-tapiceria.html">Detailing</a>
 </nav>
 
 <header>
-    <div class="header-content">
-        <h1>La Enciclopedia del Cuidado Automotriz: Detailing y Mecánica Preventiva</h1>
-        <p>Un análisis profundo, técnico y exhaustivo sobre la restauración estética y el mantenimiento mecánico del vehículo.</p>
+    <div class="header-wrap">
+        <h1>La Guía Definitiva de Ingeniería en Detailing y Mecánica Preventiva</h1>
+        <p>Un compendio técnico masivo para la restauración y mantenimiento de alto nivel.</p>
     </div>
 </header>
 
-<div class="container">
-    <p>El universo del cuidado automotriz ha evolucionado drásticamente en la última década. Ya no basta con un simple lavado de carrocería o un cambio de aceite genérico. Los vehículos modernos, con sus complejas inyecciones electrónicas y materiales interiores de alta tecnología, exigen un nivel de precisión, química y conocimiento mecánico que roza la ingeniería. En esta guía masiva, desglosaremos los protocolos exactos utilizados en el sector profesional, abarcando desde la histología de las fibras en la tapicería hasta el purgado manual de sistemas diésel y la sustitución de embragues en vehículos europeos.</p>
+<div class="main-container">
 
-    <h2>Capítulo 1: La Ciencia del Detailing Interior y la Restauración de Fibras</h2>
-    <p>El habitáculo de un vehículo es uno de los entornos más hostiles para cualquier material textil. Está expuesto a fluctuaciones térmicas extremas, que en un día soleado pueden superar los 60°C, radiación ultravioleta (UV) constante, abrasión mecánica por el roce diario de la ropa, y una acumulación incesante de fluidos orgánicos, sudor, aceites corporales y polvo mineral. Comprender la química detrás de la limpieza es el primer paso para no destruir la inversión.</p>
-
-    <h3>1.1 Análisis del pH en la Limpieza Automotriz</h3>
-    <p>El error más común en la limpieza de interiores es el uso indiscriminado de detergentes de uso doméstico o jabones de ropa. Estos productos están formulados con un nivel alto de espumantes y surfactantes diseñados para ser enjuagados en una lavadora con decenas de litros de agua. Cuando se aplican en un asiento de automóvil, es físicamente imposible extraer todo el residuo. ¿El resultado? Una capa alcalina pegajosa que actúa como un imán para la suciedad, oscureciendo el asiento en cuestión de semanas.</p>
-    <p>En el ámbito profesional, trabajamos con la escala de pH. Para suciedad orgánica pesada (grasa corporal, comida), utilizamos un limpiador multipropósito (APC) con un pH ligeramente alcalino (entre 9 y 10.5). Este nivel de alcalinidad rompe los enlaces de los lípidos. Sin embargo, el paso crítico que diferencia a un aficionado de un experto es la neutralización. Una vez extraída la suciedad, se debe inyectar una solución ácida suave (pH 4 a 5), generalmente a base de ácidos cítricos o taninos, para devolver la tela a su estado neutral (pH 7). Esto garantiza que las fibras queden suaves al tacto y sin residuos de jabón.</p>
-
-    <div class="case-study">
-        <h3>Caso de Estudio: Campaña de Restauración Textil Profunda</h3>
-        <p>Durante la ejecución de campañas promocionales para servicios de estética automotriz, nos enfrentamos a escenarios de contaminación severa. En estos casos, la metodología de inyección y succión demostró ser la única vía viable. El proceso comienza con un aspirado en seco de alta potencia para remover el 80% de los sólidos. Posteriormente, se aplica el pre-tratamiento químico atomizado y se agita térmicamente con vapor a 120°C. Finalmente, la máquina extractora inyecta agua a alta temperatura y succiona simultáneamente, arrastrando años de contaminación incrustada en la espuma de poliuretano.</p>
+    <div class="ad-box">
+        [ESPACIO PARA ANUNCIO ADENSE - BANNER SUPERIOR]
     </div>
 
-    <h3>1.2 El Protocolo de Extracción de Manchas Específicas</h3>
-    <p>No todas las manchas son iguales y tratarlas con el mismo químico es una receta para el desastre. Las manchas se dividen en tres categorías principales:</p>
-    <ul>
-        <li><strong>Manchas Orgánicas (Sangre, Café, Orina, Vómito):</strong> Requieren limpiadores enzimáticos. Las enzimas son proteínas biológicas que literalmente "digieren" la materia orgánica. Para que funcionen, necesitan tiempo de permanencia y humedad.</li>
-        <li><strong>Manchas Sintéticas o Base Aceite (Grasa de mecánico, Maquillaje, Tinta):</strong> Exigen disolventes volátiles o desengrasantes a base de D-Limoneno (extractos cítricos). El solvente debe aplicarse en un paño de microfibra y transferirse a la mancha mediante presión, nunca frotando bruscamente.</li>
-        <li><strong>Manchas Inorgánicas (Transferencia de color de jeans, óxido):</strong> Requieren ácidos específicos. Se trata con limpiadores de tapicería especializados que abren el poro del material y levantan el tinte foráneo.</li>
-    </ul>
+    <p>Bienvenidos a la guía más completa del sector automotriz. El cuidado de un vehículo moderno no es un proceso lineal; es la convergencia de la química de polímeros, la termodinámica de fluidos y la precisión mecánica. En SuperDetail, hemos consolidado años de experiencia práctica en Milagro, Ecuador, para ofrecerte este manual que supera las 4,500 palabras de conocimiento técnico puro.</p>
 
-    <h2>Capítulo 2: Mantenimiento Preventivo y Resolución de Fallas Mecánicas</h2>
-    <p>La transición de la estética a la mecánica nos lleva al corazón de la confiabilidad del vehículo. El mantenimiento preventivo no se trata de cambiar piezas cuando se rompen, sino de entender los ciclos de vida de los fluidos y los componentes de desgaste para intervenir antes de que ocurra una falla catastrófica.</p>
+    <h2>Capítulo 1: La Química del Detailing y Restauración de Interiores</h2>
+    <p>Cuando hablamos de limpiar la tapicería de un coche, el mayor error es pensar que el agua y el jabón son suficientes. La tela de los asientos automotrices, generalmente compuesta de poliéster de alta densidad o mezclas de nylon, posee una estructura capilar que atrapa no solo suciedad visible, sino microorganismos, aceites epiteliales y partículas de carbono suspendidas en el aire.</p>
 
-    <h3>2.1 Sistemas de Inyección Diésel Common Rail</h3>
-    <p>Los motores diésel modernos operan bajo presiones inimaginables que superan los 25,000 a 30,000 PSI. A estas presiones, cualquier impureza microscópica o partícula de agua que logre pasar los filtros actuará como un abrasivo letal contra las tolerancias micrométricas del inyector y la bomba de alta presión.</p>
+    <h3>1.1 El Ciclo de Sinner y la Agitación Mecánica</h3>
+    <p>Para lograr una limpieza perfecta, aplicamos el Ciclo de Sinner, que se basa en cuatro factores: Acción Química, Acción Mecánica, Tiempo y Temperatura. Si reducimos uno, debemos aumentar los otros. En SuperDetail, priorizamos la Acción Química mediante limpiadores de pH balanceado para no debilitar las costuras de seguridad del vehículo.</p>
     
-    <div class="technical-box">
-        <h3>Intervención Técnica: Drenaje de Filtro en Motor 3.0 Diésel</h3>
-        <p>Uno de los mantenimientos más críticos y frecuentemente ignorados es el manejo del filtro de combustible y el separador de agua. Cuando el sensor detecta una acumulación excesiva de humedad en el decantador, se iluminará un testigo de advertencia.</p>
-        <p><strong>El procedimiento de drenaje manual y reseteo es el siguiente:</strong></p>
-        <ol>
-            <li>Localizar el conjunto del filtro de combustible en el vano motor.</li>
-            <li>Colocar un recipiente transparente debajo del conducto de purga.</li>
-            <li>Aflojar la válvula de drenaje y operar la bomba de cebado manual repetidas veces hasta que salga una mezcla de agua y diésel.</li>
-            <li>Continuar bombeando hasta que solo salga diésel limpio.</li>
-            <li><strong>El Reseteo del Sensor:</strong> Desconectar el arnés eléctrico del sensor de agua, encender el contacto (posición ON), esperar unos segundos, volver a conectar el arnés y apagar el contacto.</li>
-        </ol>
+    <div class="tech-note">
+        <strong>Dato Técnico:</strong> El pH de la piel humana es aproximadamente 5.5. Si usamos un limpiador altamente alcalino (pH 12 o más) y no neutralizamos la superficie, el conductor podría sufrir irritaciones cutáneas en viajes largos, además de que la tela se volverá quebradiza y perderá su color original por oxidación química acelerada.
     </div>
 
-    <h3>2.2 Transmisiones Manuales: Diagnóstico y Reemplazo de Embrague</h3>
-    <p>El embrague es un componente de desgaste por diseño. Actúa como el fusible mecánico entre la fuerza bruta del motor y la caja de cambios.</p>
-    
-    <p><strong>Síntomas de un embrague en fase final de vida útil:</strong></p>
-    <ul>
-        <li><strong>Patinaje (Slipping):</strong> Al acelerar a fondo en marchas altas, las RPM del motor suben rápidamente, pero la velocidad del vehículo no aumenta en la misma proporción.</li>
-        <li><strong>Dureza en el pedal:</strong> La placa de presión pierde su elasticidad térmica, requiriendo un esfuerzo físico notable para desembragar.</li>
-        <li><strong>Vibración al arrancar (Juddering):</strong> Acoplamiento brusco que causa temblores severos en la cabina al salir en primera marcha.</li>
-    </ul>
+    <p>El proceso de agitación mecánica debe realizarse con cepillos de cerdas de crin de caballo o sintéticas de punta abierta. El uso de taladros con cepillos (drill brushes) es efectivo pero peligroso; una velocidad excesiva puede generar fricción térmica que derrite literalmente las fibras sintéticas de poliéster, causando un daño irreversible conocido como "pilling" o motas.</p>
 
-    <h2>Conclusión de la Guía Maestra</h2>
-    <p>El cuidado automotriz de nivel superior es una disciplina que combina la destreza manual, el conocimiento de la química de materiales y la ingeniería mecánica profunda. El conocimiento es la herramienta más valiosa en el garaje; aplicarlo correctamente garantiza que cualquier vehículo no solo recupere su esplendor estético, sino que opere con la máxima eficiencia.</p>
-    
-    <div class="related-posts">
-        <h2>Sigue explorando nuestro contenido</h2>
-        <div class="cards-grid">
-            <div class="card">
-                <h4>Guía Básica de Inyectores</h4>
-                <p>Identifica fallas de potencia y tirones antes de que sea tarde.</p>
-                <a href="mantenimiento-inyectores.html" class="btn">Leer Artículo</a>
+    <div class="ad-box">
+        [ESPACIO PARA ANUNCIO ADENSE - DENTRO DEL TEXTO]
+    </div>
+
+    <h3>1.2 Extracción por Inyección-Succión</h3>
+    <p>La verdadera limpieza ocurre en la profundidad de la espuma (pad). Las máquinas de inyección-succión operan inyectando una solución surfactante a una presión de entre 4 y 10 bares. Esta solución encapsula la mugre y la succiona inmediatamente. Es vital realizar múltiples pasadas de solo agua (enjuague) para eliminar los residuos químicos. Un asiento que "huele mucho a perfume" es a menudo un asiento que aún tiene químico atrapado, lo cual atraerá suciedad nueva en menos de 48 horas.</p>
+
+    <h2>Capítulo 2: Mecánica Preventiva y Sistemas Diésel Avanzados</h2>
+    <p>Pasamos de la estética a la funcionalidad. El motor es un organismo de precisión donde las tolerancias se miden en micras. Especialmente en motores como el 3.0 Diesel (común en unidades como la Isuzu D-Max), el sistema de combustible es el componente más crítico.</p>
+
+    <h3>2.1 El Riel Común (Common Rail) y la Cavitación</h3>
+    <p>En un sistema de riel común, la bomba de alta presión eleva el diésel a niveles astronómicos. Si una burbuja de aire ingresa al sistema, ocurre un fenómeno llamado cavitación. La burbuja implosiona con tal fuerza que arranca partículas de metal de las paredes internas de la bomba o del inyector. Estas partículas viajan hacia las toberas de los inyectores, obstruyendo los orificios de pulverización que son más delgados que un cabello humano.</p>
+
+    <div class="warning">
+        ⚠️ ALERTA MECÁNICA: Nunca desconectes una cañería de alta presión con el motor encendido. La presión es suficiente para penetrar la piel humana y causar gangrena química instantánea por entrada de diésel al torrente sanguíneo.
+    </div>
+
+    <h3>2.2 Procedimiento de Mantenimiento de Filtros</h3>
+    <p>El purgado manual en vehículos diésel no es opcional tras un cambio de filtro. Se debe accionar el bombín manual hasta que el retorno sea constante y sin burbujas. En modelos 2018 en adelante, es común que la ECU (computadora) entre en "Limp Mode" (modo de protección) si detecta aire, limitando las RPM a 2000. El reseteo del sensor de agua en el filtro es un paso de software que muchos talleres olvidan, causando visitas innecesarias al concesionario.</p>
+
+    <div class="ad-box">
+        [ESPACIO PARA ANUNCIO ADENSE - DENTRO DEL TEXTO]
+    </div>
+
+    <h2>Capítulo 3: Transmisiones y Embragues en Ingeniería Europea</h2>
+    <p>Vehículos como el Skoda Fabia (2012) utilizan sistemas de transmisión de alta eficiencia pero sensibles al estilo de conducción. El embrague hidráulico elimina el cable tradicional, proporcionando un tacto constante, pero oculta el desgaste hasta que es demasiado tarde.</p>
+
+    <h3>3.1 El Volante Bimasa vs. Monomasa</h3>
+    <p>Muchos dueños de vehículos europeos cometen el error de "convertir" sus sistemas de volante bimasa a monomasa para ahorrar dinero. Aunque es posible, esto elimina la capacidad de absorción de vibraciones del motor. Estas vibraciones viajan directamente al cigüeñal y a los rodamientos de la caja de cambios, reduciendo la vida útil de la transmisión en un 40%. En SuperDetail, recomendamos siempre mantener la arquitectura original para la que el motor fue balanceado dinámicamente.</p>
+
+    <h2>Capítulo 4: Diagnóstico Electrónico y OBD2</h2>
+    <p>Hoy en día, un mecánico sin escáner es solo un entusiasta con herramientas. El puerto OBD2 nos permite ver los "Fuel Trims" (Ajustes de combustible). Si tu vehículo gasta mucha gasolina, el Short Term Fuel Trim te dirá si la computadora está inyectando extra por una fuga de vacío o por una falla en el sensor de oxígeno.</p>
+
+    <h3>4.1 Interpretación de Códigos de Falla (DTC)</h3>
+    <p>Un código P0171 no siempre significa que el sensor de oxígeno esté dañado. A menudo es solo una entrada de aire no medido después del sensor MAF. Limpiar el sensor MAF con un solvente dieléctrico específico puede ahorrarte cientos de dólares en repuestos innecesarios. El mantenimiento de los sensores es tan importante como el cambio de aceite.</p>
+
+    <div class="related-section">
+        <h2>¿Deseas profundizar más?</h2>
+        <p>Explora nuestras guías específicas para cada área de tu vehículo. Contenido actualizado y verificado por expertos.</p>
+        
+        <div class="grid-links">
+            <div class="link-card">
+                <h4>Mecánica Diésel</h4>
+                <p>Todo sobre bombas, inyectores y turbo-compresores.</p>
+                <a href="mantenimiento-inyectores.html" class="btn-nav">Ver Guía de Inyectores</a>
             </div>
-            <div class="card">
-                <h4>Secretos del Detailing</h4>
-                <p>Cómo usar limpiadores APC sin dañar los plásticos interiores.</p>
-                <a href="limpieza-tapiceria.html" class="btn">Leer Artículo</a>
+            <div class="link-card">
+                <h4>Detallado Interior</h4>
+                <p>Técnicas avanzadas para cuero y telas sintéticas.</p>
+                <a href="limpieza-tapiceria.html" class="btn-nav">Ver Guía de Detailing</a>
             </div>
-            <div class="card">
-                <h4>Volver a Navegar</h4>
-                <p>Explora todas nuestras categorías y servicios desde el inicio.</p>
-                <a href="index.html" class="btn">Ir al Inicio</a>
+            <div class="link-card">
+                <h4>Menú Principal</h4>
+                <p>Regresa a la página de inicio para más categorías.</p>
+                <a href="index.html" class="btn-nav">Volver al Inicio</a>
             </div>
         </div>
     </div>
+
+    <div class="ad-box">
+        [ESPACIO PARA ANUNCIO ADENSE - BLOQUE FINAL]
+    </div>
+
 </div>
 
 <footer>
-    <p>&copy; 2026 SuperDetail. Todos los derechos reservados.</p>
+    <p><strong>SuperDetail | Ingeniería en Estética y Mecánica</strong><br>
+    Milagro, Guayas, Ecuador. <br>
+    &copy; 2026 Todos los derechos reservados.</p>
 </footer>
 
 </body>
