@@ -258,7 +258,6 @@
 <script>
     async function loadFAQs() {
         const placeholder = document.getElementById('faq-placeholder');
-        // Esto detecta en qué página estás parado (ej: limpieza-tapiceria.html)
         const currentPath = window.location.pathname.split('/').pop() || 'index.html';
 
         try {
@@ -266,27 +265,34 @@
             const blogs = await response.json();
             
             let html = '';
-            
-            // Filtramos para que no se recomiende a sí mismo
+            // Filtramos para que no se recomiende el blog actual
             const otrosBlogs = blogs.filter(b => b.url !== currentPath);
 
             otrosBlogs.forEach(blog => {
                 html += `
-                <details style="background: white; margin-bottom: 12px; padding: 15px; border-radius: 5px; border: 1px solid #eee; cursor: pointer;">
-                    <summary style="font-weight: bold; list-style: none; display: flex; justify-content: space-between;">
-                        ${blog.titulo} <span style="color: #e67e22;">▼</span>
-                    </summary>
-                    <div style="padding-top:10px; border-top:1px solid #f0f0f0; margin-top:10px;">
-                        <p style="font-size: 0.95rem; margin-bottom:10px; color: #555;">${blog.descripcion}</p>
-                        <a href="${blog.url}" style="color: #e67e22; font-weight: bold; text-decoration: none;">Leer guía completa de ${blog.categoria} →</a>
+                <a href="${blog.url}" style="text-decoration: none; color: inherit; display: block; margin-bottom: 15px;">
+                    <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #eee; transition: 0.3s; cursor: pointer; display: flex; justify-content: space-between; align-items: center;" 
+                         onmouseover="this.style.borderColor='#e67e22'; this.style.transform='translateY(-2px)';" 
+                         onmouseout="this.style.borderColor='#eee'; this.style.transform='translateY(0)';">
+                        
+                        <div style="flex: 1;">
+                            <span style="display: block; font-weight: bold; font-size: 1.15rem; margin-bottom: 5px; color: #1a1a1a;">
+                                ${blog.titulo}
+                            </span>
+                            <span style="font-size: 0.9rem; color: #666;">
+                                ${blog.descripcion}
+                            </span>
+                        </div>
+                        
+                        <span style="color: #e67e22; font-size: 1.5rem; margin-left: 20px;">→</span>
                     </div>
-                </details>
+                </a>
                 `;
             });
 
             placeholder.innerHTML = html || '<p>Más guías técnicas próximamente.</p>';
         } catch (error) {
-            console.error('Error:', error);
+            console.error('Error cargando el cerebro central:', error);
             placeholder.innerHTML = '';
         }
     }
