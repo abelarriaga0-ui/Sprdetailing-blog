@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratado de Ingeniería de Suspensión y Dinámica de Chasis | Detailing Pro</title>
+    <style>
+        :root { --primary: #1a1a1a; --accent: #e67e22; --text: #333; --bg: #f4f7f6; --white: #ffffff; }
+        body { font-family: 'Segoe UI', Roboto, sans-serif; line-height: 2; color: var(--text); background: var(--bg); margin: 0; }
+        
+        .navbar { background: var(--primary); padding: 15px 0; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: center; gap: 20px; }
+        .navbar a { color: white; text-decoration: none; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; }
+
+        header { background: #111; color: white; padding: 100px 20px; text-align: center; border-bottom: 5px solid var(--accent); }
+        .main-container { max-width: 850px; margin: -60px auto 60px; background: var(--white); padding: 60px; box-shadow: 0 15px 40px rgba(0,0,0,0.1); border-radius: 12px; }
+
+        h2 { color: var(--primary); font-size: 2.2rem; margin-top: 60px; border-left: 8px solid var(--accent); padding-left: 20px; }
+        h3 { color: var(--accent); font-size: 1.6rem; margin-top: 40px; }
+        p { margin-bottom: 25px; text-align: justify; font-size: 1.15rem; color: #444; }
+
+        /* NUEVO NAVEGADOR COMPACTO EN GRID */
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .nav-card {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: 0.3s;
+        }
+        .nav-card:hover { border-color: var(--accent); background: #fff; transform: translateY(-2px); }
+        .nav-card span { font-weight: bold; font-size: 0.95rem; color: var(--primary); }
+
+        .tech-box { background: #eef7ff; border-radius: 8px; padding: 30px; margin: 40px 0; border: 1px solid #d0e3f0; }
+        footer { background: #111; color: #888; text-align: center; padding: 60px; }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html">Inicio</a>
+    <a href="inyectores.html">Inyectores</a>
+    <a href="faros.html">Faros</a>
+    <a href="suspension.html">Suspensión</a>
+</nav>
+
+<header>
+    <h1>Cinemática y Mantenimiento de Suspensión</h1>
+    <p>Análisis profundo de absorción de impactos y estabilidad vehicular.</p>
+</header>
+
+<div class="main-container">
+    <p>La suspensión de un vehículo no es simplemente un conjunto de resortes para la comodidad; es un sistema de ingeniería complejo diseñado para mantener la huella de contacto del neumático con el suelo bajo cualquier condición de carga o maniobra. En este tratado, analizaremos la física detrás de la amortiguación y los protocolos de inspección técnica de alto nivel.</p>
+
+    <h2>Capítulo 1: La Física del Movimiento Oscilatorio</h2>
+    <p>Cualquier irregularidad en el pavimento genera una fuerza ascendente que debe ser gestionada. Si un auto solo tuviera resortes, rebotaría indefinidamente debido a la conservación de la energía. Aquí entra el amortiguador, que convierte la energía cinética en energía térmica mediante el paso de aceite a través de válvulas microscópicas.</p>
+    
+    <div class="tech-box">
+        <strong>Ecuación de Amortiguamiento:</strong> La fuerza de amortiguación se puede modelar como $$F = -c \dot{x}$$, donde $c$ es el coeficiente de amortiguamiento y $\dot{x}$ es la velocidad del pistón. Un sistema en mal estado pierde este coeficiente, permitiendo oscilaciones peligrosas.
+    </div>
+
+    <h2>Capítulo 2: Componentes Críticos del Chasis</h2>
+    <h3>2.1 Silentblocks y Bujes de Poliuretano</h3>
+    <p>Los bujes son los puntos de articulación del chasis. Están diseñados para absorber vibraciones de alta frecuencia (ruido de rodadura) y permitir el movimiento de los brazos de control. Con el tiempo, el caucho sufre de fatiga elástica y se agrieta, provocando juegos mecánicos que alteran la alineación.</p>
+
+    <h3>2.2 Rótulas y Terminales de Dirección</h3>
+    <p>Estos componentes actúan como articulaciones esféricas. Una rótula con juego no solo genera ruidos (clocs), sino que puede colapsar, provocando la pérdida total del control de la rueda. La inspección requiere el uso de palancas de fuerza para detectar desplazamientos axiales menores a 1mm.</p>
+
+    <h2>Capítulo 3: Geometría de Alineación Avanzada</h2>
+    <p>No basta con que las ruedas estén "rectas". La ingeniería automotriz utiliza tres ángulos fundamentales para garantizar la estabilidad:</p>
+    <ul>
+        <li><strong>Camber (Caída):</strong> El ángulo de inclinación de la rueda respecto a la vertical. Un camber negativo mejora el apoyo en curvas de alta velocidad.</li>
+        <li><strong>Caster (Avance):</strong> Proporciona estabilidad direccional y hace que el volante regrese al centro por sí solo.</li>
+        <li><strong>Toe (Convergencia):</strong> Determina si las ruedas apuntan ligeramente hacia adentro o hacia afuera, compensando la elasticidad de los bujes durante la aceleración.</li>
+    </ul>
+
+    <h2>Capítulo 4: Diagnóstico de Fatiga de Materiales</h2>
+    <p>Los resortes helicoidales, aunque parecen eternos, sufren de un fenómeno llamado "cedido". Tras miles de ciclos de compresión, la estructura molecular del acero cambia, reduciendo la altura de rodaje del vehículo. Esto afecta no solo la estética, sino el centro de gravedad y la capacidad de frenado del eje afectado.</p>
+
+    <h2>Capítulo 5: El Futuro: Suspensión Electrónica y Magnética</h2>
+    <p>Estamos pasando de sistemas pasivos a sistemas activos. Los amortiguadores magnetoreológicos utilizan un fluido con partículas de hierro que cambian su viscosidad en milisegundos mediante un campo electromagnético, permitiendo que un auto sea una nube en ciudad y un deportivo en pista.</p>
+
+    <div class="faq-section" style="margin-top:80px; border-top: 2px solid #eee; padding-top:40px;">
+        <h2 style="font-size:1.8rem; border:none; padding:0;">Biblioteca de Guías Técnicas</h2>
+        <p style="text-align:left; font-size:1rem; color:#666;">Selecciona otro módulo para profundizar en el mantenimiento profesional:</p>
+        
+        <div id="faq-grid" class="faq-grid">
+            </div>
+    </div>
+
+</div>
+
+<footer>
+    <p><strong>Manual de Ingeniería Automotriz</strong><br>
+    &copy; 2026 - Contenido Técnico de Alta Fidelidad</p>
+</footer>
+
+<script>
+    async function loadGrid() {
+        const grid = document.getElementById('faq-grid');
+        const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+
+        try {
+            const response = await fetch('blogs.json');
+            const blogs = await response.json();
+            
+            let html = '';
+            const otros = blogs.filter(b => b.url !== currentPath);
+
+            otros.forEach(blog => {
+                html += `
+                <a href="${blog.url}" class="nav-card">
+                    <div>
+                        <span>${blog.titulo}</span>
+                        <div style="font-size:0.75rem; color:#888; margin-top:5px;">Categoría: ${blog.categoria}</div>
+                    </div>
+                    <span style="color:var(--accent); font-size:1.2rem;">→</span>
+                </a>
+                `;
+            });
+
+            grid.innerHTML = html || '<p>Más guías en camino...</p>';
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    }
+    loadGrid();
+</script>
+
+</body>
+</html>
