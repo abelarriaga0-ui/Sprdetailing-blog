@@ -1,0 +1,20 @@
+[
+  {
+    "titulo": "¿Cómo afecta la limpieza al motor del vehículo?",
+    "descripcion": "La humedad excesiva puede dañar componentes electrónicos críticos.",
+    "url": "mecanica.html",
+    "categoria": "Mecánica"
+  },
+  {
+    "titulo": "¿Se pueden recuperar faros opacos mediante el detallado?",
+    "descripcion": "El pulido y sellado de policarbonato devuelve la visibilidad nocturna.",
+    "url": "faros.html",
+    "categoria": "Exterior"
+  },
+  {
+    "titulo": "¿Por qué los inyectores influyen en el olor del interior?",
+    "descripcion": "Un motor eficiente evita emanaciones que impregnan la tapicería.",
+    "url": "inyectores.html",
+    "categoria": "Mecánica"
+  }
+]
