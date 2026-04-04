@@ -3,63 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía Técnica: Mantenimiento de Inyectores Diésel 3.0 | SuperDetail</title>
+    <title>Ingeniería de Sistemas de Inyección: Guía Completa de Limpieza y Diagnóstico | Detailing Pro</title>
+    <meta name="description" content="Manual técnico exhaustivo sobre mantenimiento de inyectores, limpieza por ultrasonido, cavitación y diagnóstico de sistemas de combustible.">
+    
     <style>
-        body { font-family: sans-serif; line-height: 1.8; color: #333; max-width: 800px; margin: auto; padding: 20px; }
-        header { border-bottom: 3px solid #e67e22; margin-bottom: 30px; }
-        h1 { color: #111; }
-        h2 { color: #e67e22; margin-top: 40px; }
-        .highlight { background: #fff3e0; padding: 20px; border-left: 5px solid #e67e22; margin: 20px 0; }
-        .alerta { background: #ffebee; padding: 15px; border-radius: 8px; color: #c62828; font-weight: bold; }
-        img-placeholder { background: #ddd; display: block; width: 100%; height: 300px; text-align: center; line-height: 300px; margin: 20px 0; }
-        nav a { color: #e67e22; text-decoration: none; font-weight: bold; }
+        :root {
+            --primary: #1a1a1a;
+            --accent: #e67e22;
+            --text: #333;
+            --bg: #f4f7f6;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.9;
+            color: var(--text);
+            background: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background: var(--primary);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+        .navbar a:hover { color: var(--accent); }
+
+        header {
+            background: #111;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--accent);
+        }
+        .header-wrap {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .main-container {
+            max-width: 800px;
+            margin: -40px auto 40px;
+            background: var(--white);
+            padding: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 2.2rem;
+            margin-top: 60px;
+            border-left: 6px solid var(--accent);
+            padding-left: 20px;
+            line-height: 1.2;
+        }
+        h3 {
+            color: var(--accent);
+            font-size: 1.6rem;
+            margin-top: 40px;
+        }
+        p {
+            margin-bottom: 25px;
+            text-align: justify;
+            font-size: 1.15rem;
+        }
+        ul, ol {
+            margin-bottom: 30px;
+            padding-left: 30px;
+        }
+        li { margin-bottom: 15px; font-size: 1.1rem; }
+
+        .tech-note {
+            background: #eef7ff;
+            border-left: 5px solid #3498db;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .faq-section {
+            margin-top: 60px;
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        footer {
+            background: #111;
+            color: #ccc;
+            text-align: center;
+            padding: 50px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .main-container { padding: 25px; margin-top: 0; border-radius: 0; }
+        }
     </style>
 </head>
 <body>
-    <nav><a href="index.html">← Volver al Inicio</a></nav>
-    <header>
-        <h1>Mantenimiento y Diagnóstico de Inyectores Diésel: Guía Completa</h1>
-        <p><em>Por: El equipo técnico de SuperDetail | Actualizado 2026</em></p>
-    </header>
 
-    <p>El sistema de inyección es el corazón de cualquier motor diésel moderno, especialmente en unidades de alta potencia como los motores 3.0. Un inyector sucio o defectuoso no solo reduce la potencia, sino que puede terminar perforando un pistón debido a una mala atomización del combustible.</p>
+<nav class="navbar">
+    <a href="index.html">Inicio</a>
+    <a href="inyectores.html">Inyectores</a>
+    <a href="limpieza-tapiceria.html">Tapicería</a>
+</nav>
 
-    <h2>1. Síntomas de Inyectores en Mal Estado</h2>
-    <p>Antes de desarmar, es vital identificar los síntomas. En nuestra experiencia en el taller, los fallos más comunes se manifiestan de la siguiente manera:</p>
+<header>
+    <div class="header-wrap">
+        <h1>Mantenimiento y Limpieza de Inyectores</h1>
+        <p>Optimización del sistema de combustible para máxima eficiencia y potencia.</p>
+    </div>
+</header>
+
+<div class="main-container">
+
+    <p>El sistema de inyección electrónica es, sin duda, uno de los avances más significativos en la historia de la ingeniería automotriz. Sustituyendo al carburador, este sistema permite una dosificación precisa del combustible, adaptándose en tiempo real a las condiciones de carga, temperatura y altitud. Sin embargo, esta precisión tiene un costo: la sensibilidad extrema a la contaminación. En esta guía, desglosaremos los protocolos técnicos para mantener este sistema en condiciones óptimas.</p>
+
+    <h2>Capítulo 1: El Desafío de la Contaminación del Combustible</h2>
+    <p>A pesar de los filtros de combustible de alta eficiencia, partículas microscópicas y compuestos químicos complejos logran llegar a los inyectores. Existen tres tipos principales de residuos que afectan el rendimiento:</p>
+    
+    <h3>1.1 Barnices y Gomas de Hidrocarburos</h3>
+    <p>Cuando apagamos el motor, el calor residual calienta el combustible que queda atrapado en la punta de los inyectores. Este calor hace que las fracciones más ligeras de la gasolina se evaporen, dejando atrás una capa pegajosa de gomas y barnices. Con el tiempo, esta capa se endurece y reduce el diámetro interno de la tobera del inyector, alterando el patrón de aspersión.</p>
+
+    <h3>1.2 Carbonilla y Depósitos de Combustión</h3>
+    <p>En la cámara de combustión, las temperaturas pueden superar los 2,000°C. Si el inyector gotea o tiene un patrón de rociado deficiente, el combustible no se quema por completo, generando hollín o carbonilla. Este residuo sólido se adhiere a la punta del inyector (nozzle), obstruyendo los orificios microscópicos y provocando un ciclo vicioso de mala combustión y más suciedad.</p>
+
+    <div class="tech-note">
+        <strong>Análisis Técnico:</strong> Un inyector promedio opera a una frecuencia de milisegundos. Un retraso de apenas 0.5ms en la apertura debido a la suciedad puede resultar en una pérdida de eficiencia del 15%, lo que se traduce directamente en un mayor gasto de combustible y pérdida de torque.
+    </div>
+
+    <h2>Capítulo 2: Limpieza Profesional por Ultrasonido</h2>
+    <p>La limpieza por ultrasonido es el único método que garantiza una restauración del 100% de la capacidad de flujo. Este proceso no se limita a "lavar" el inyector, sino que utiliza principios físicos avanzados para desintegrar la suciedad interna.</p>
+
+    <h3>2.1 El Proceso de Cavitación</h3>
+    <p>En una tina de ultrasonido, se generan ondas de alta frecuencia que crean millones de micro-burbujas en el líquido de limpieza. Estas burbujas implosionan con una fuerza enorme en una escala microscópica, un fenómeno llamado cavitación. Esta energía desprende los barnices incrustados en los filtros internos del inyector y en las paredes de la aguja, algo imposible de lograr con aditivos químicos agregados al tanque.</p>
+
+    <h3>2.2 Banco de Pruebas y Balanceado</h3>
+    <p>Tras la limpieza, es obligatorio pasar los inyectores por un banco de pruebas. Aquí se miden tres parámetros críticos:</p>
     <ul>
-        <li><strong>Humo Negro en Aceleración:</strong> Indica una mezcla demasiado rica o un inyector que "chorrea" en lugar de pulverizar.</li>
-        <li><strong>Ralentí Inestable:</strong> El motor vibra excesivamente cuando el vehículo está detenido.</li>
-        <li><strong>Arranque Difícil en Frío:</strong> Pérdida de presión en el riel común (Common Rail) debido a un retorno excesivo.</li>
-        <li><strong>Aumento del Consumo:</strong> Una mala combustión obliga a pisar más el acelerador para obtener la misma respuesta.</li>
+        <li><strong>Prueba de Goteo:</strong> Se aplica presión nominal sin activar el inyector. Si gotea, el asiento de la aguja está dañado o sucio.</li>
+        <li><strong>Prueba de Abanico:</strong> Se visualiza el patrón de rociado. Debe ser una neblina cónica perfecta, no un chorro sólido.</li>
+        <li><strong>Prueba de Caudal (Balanceado):</strong> Se activan todos los inyectores durante un tiempo determinado. La diferencia de volumen entre el que más entrega y el que menos entrega no debe superar el 3-5%.</li>
     </ul>
 
-    <div class="alerta">
-        ⚠️ IMPORTANTE: Si escuchas un "picado" metálico constante, apaga el motor. Podrías tener un inyector abierto que está inundando el cilindro.
+    <h2>Capítulo 3: Diagnóstico por Escáner (OBD2)</h2>
+    <p>Antes de desmontar, un técnico profesional analiza los "Fuel Trims" (Ajustes de combustible). Si el STFT (Short Term Fuel Trim) muestra valores positivos altos (ej. +20%), significa que la computadora está detectando una mezcla pobre y está intentando inyectar más gasolina para compensar la obstrucción de los inyectores.</p>
+
+    <div class="tech-note">
+        <strong>Dato de Valor:</strong> Inyectores sucios pueden causar el sobrecalentamiento del catalizador. Al no quemarse bien el combustible, este termina quemándose dentro del catalizador, elevando su temperatura por encima de los límites de diseño y fundiendo sus celdas cerámicas.
     </div>
 
-    <h2>2. El Proceso de Limpieza y Purga Manual</h2>
-    <p>Muchos usuarios cometen el error de solo usar aditivos de tanque. Aunque ayudan, para una limpieza real en motores con alto kilometraje, recomendamos el método semidirecto.</p>
-    
-    <h3>El sistema de retorno y purgado</h3>
-    <p>En motores como el de la Isuzu D-Max, el purgado del sistema es esencial tras realizar cualquier mantenimiento. Si queda aire en las líneas, la bomba de alta presión puede sufrir cavitación.</p>
-    
-    <div class="highlight">
-        <strong>Tip de Experto:</strong> Al purgar, utiliza siempre la bomba manual sobre el filtro de combustible hasta que el tacto sea totalmente rígido. No intentes arrancar el motor si el sistema tiene aire, ya que los inyectores se lubrican con el mismo diésel.
+    <h2>Capítulo 4: FAQ - Consultas Técnicas Frecuentes</h2>
+    <p>En esta sección resolvemos las dudas más comunes de nuestros usuarios sobre el sistema de inyección:</p>
+
+    <div id="dynamic-faq" class="faq-section">
+        <h2>Preguntas y Enlaces Sugeridos</h2>
+        <div id="faq-placeholder">Cargando guías automáticas...</div>
     </div>
 
-    <h2>3. Prevención: El Secreto está en la Filtración</h2>
-    <p>El peor enemigo del inyector no es el uso, es el agua y las impurezas del combustible. En Ecuador, la calidad del diésel puede variar, por lo que recomendamos:</p>
-    <ol>
-        <li>Cambiar el filtro de combustible cada 5,000 km, no cada 10,000 como dice el manual genérico.</li>
-        <li>Drenar el separador de agua semanalmente.</li>
-        <li>Evitar tanquear cuando el camión cisterna está descargando en la gasolinera (se revuelven los sedimentos).</li>
-    </ol>
+    <h2>Capítulo 5: Glosario de Inyección Electrónica</h2>
+    <p><strong>ECU (Electronic Control Unit):</strong> El cerebro que controla el tiempo de apertura de los inyectores basado en sensores.</p>
+    <p><strong>Pulso de Inyección:</strong> El tiempo, medido en milisegundos, que el inyector permanece abierto en cada ciclo.</p>
+    <p><strong>Duty Cycle:</strong> El porcentaje de tiempo que el inyector está abierto respecto al tiempo total disponible en un ciclo de motor.</p>
+    <p><strong>Presión de Riel:</strong> La presión constante a la que se encuentra el combustible esperando ser inyectado (usualmente entre 35 y 60 PSI en motores de gasolina convencionales).</p>
 
-    <h2>Conclusión</h2>
-    <p>Mantener tus inyectores limpios no es un gasto, es una inversión que alarga la vida de tu motor por años. Si tras una limpieza y cambio de filtros los síntomas persisten, es hora de llevarlos a un banco de pruebas profesional para medir caudales y tiempos de respuesta.</p>
+</div>
 
-    <footer style="margin-top: 50px; border-top: 1px solid #eee; padding-top: 20px;">
-        <p>© 2026 SuperDetail - Expertos en Mecánica y Detailing.</p>
-    </footer>
+<footer>
+    <p><strong>Manual de Ingeniería Automotriz</strong><br>
+    Guías técnicas para el mantenimiento de alto nivel.<br>
+    &copy; 2026 Todos los derechos reservados.</p>
+</footer>
+
+<script>
+    async function loadFAQs() {
+        const placeholder = document.getElementById('faq-placeholder');
+        const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+
+        try {
+            const response = await fetch('blogs.json');
+            const blogs = await response.json();
+            
+            let html = '';
+            const otrosBlogs = blogs.filter(b => b.url !== currentPath);
+
+            otrosBlogs.forEach(blog => {
+                html += `
+                <a href="${blog.url}" style="text-decoration: none; color: inherit; display: block; margin-bottom: 15px;">
+                    <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #eee; transition: 0.3s; cursor: pointer; display: flex; justify-content: space-between; align-items: center;" 
+                         onmouseover="this.style.borderColor='#e67e22'; this.style.transform='translateY(-2px)';" 
+                         onmouseout="this.style.borderColor='#eee'; this.style.transform='translateY(0)';">
+                        
+                        <div style="flex: 1;">
+                            <span style="display: block; font-weight: bold; font-size: 1.15rem; margin-bottom: 5px; color: #1a1a1a;">
+                                ${blog.titulo}
+                            </span>
+                            <span style="font-size: 0.9rem; color: #666;">
+                                ${blog.descripcion}
+                            </span>
+                        </div>
+                        
+                        <span style="color: #e67e22; font-size: 1.5rem; margin-left: 20px;">→</span>
+                    </div>
+                </a>
+                `;
+            });
+
+            placeholder.innerHTML = html || '<p>Más guías técnicas próximamente.</p>';
+        } catch (error) {
+            console.error('Error cargando el cerebro central:', error);
+            placeholder.innerHTML = '';
+        }
+    }
+    loadFAQs();
+</script>
+
 </body>
 </html>
