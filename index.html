@@ -3,41 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SuperDetail | Guía de Mantenimiento y Estética Automotriz</title>
+    <title>SuperDetail | Pasión por el Cuidado Automotriz</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; color: #333; }
-        header { border-bottom: 2px solid #eee; padding-bottom: 20px; margin-bottom: 20px; }
-        nav a { margin-right: 15px; text-decoration: none; color: #007bff; font-weight: bold; }
-        .post-card { border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 8px; }
-        h2 { margin-top: 0; }
+        :root {
+            --principal: #111111;
+            --acento: #e67e22;
+            --fondo: #f4f4f4;
+            --texto: #333;
+        }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: var(--fondo); color: var(--texto); line-height: 1.6; }
+        
+        header { background: var(--principal); color: white; padding: 60px 20px; text-align: center; border-bottom: 4px solid var(--acento); }
+        header h1 { margin: 0; font-size: 3rem; letter-spacing: 2px; }
+        header p { color: var(--acento); font-weight: bold; text-transform: uppercase; margin-top: 10px; }
+
+        nav { background: #222; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 100; }
+        nav a { color: white; text-decoration: none; margin: 0 20px; font-weight: bold; transition: 0.3s; }
+        nav a:hover { color: var(--acento); }
+
+        .container { max-width: 1000px; margin: 40px auto; padding: 20px; }
+        
+        .seccion-titulo { border-left: 5px solid var(--acento); padding-left: 15px; margin-bottom: 30px; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        
+        .card { background: white; border-radius: 10px; padding: 25px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: 0.3s; border: 1px solid #eee; }
+        .card:hover { transform: translateY(-10px); border-color: var(--acento); }
+        .card h3 { margin-top: 0; color: var(--principal); }
+        .btn { display: inline-block; background: var(--principal); color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 15px; font-size: 0.9rem; transition: 0.3s; }
+        .btn:hover { background: var(--acento); }
+
+        .about { background: white; padding: 40px; border-radius: 10px; margin-top: 50px; text-align: center; }
+
+        footer { background: var(--principal); color: #777; text-align: center; padding: 40px; margin-top: 60px; }
     </style>
 </head>
 <body>
-    <header>
-        <h1>SuperDetail</h1>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="mantenimiento-inyectores.html">Mecánica</a>
-            <a href="limpieza-tapiceria.html">Detailing</a>
-        </nav>
-    </header>
 
-    <section>
+<header>
+    <h1>SUPERDETAIL</h1>
+    <p>Expertos en Detailing y Mecánica Preventiva</p>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="mantenimiento-inyectores.html">Mecánica</a>
+    <a href="limpieza-tapiceria.html">Detailing</a>
+</nav>
+
+<div class="container">
+    <div class="seccion-titulo">
         <h2>Últimas Guías Técnicas</h2>
-        <div class="post-card">
-            <h3>Cómo Limpiar Inyectores Diésel Paso a Paso</h3>
-            <p>Aprende a identificar fallas de potencia y cómo purgar el sistema de combustible...</p>
-            <a href="mantenimiento-inyectores.html">Leer guía completa →</a>
-        </div>
-        <div class="post-card">
-            <h3>Restauración de Tapicería de Tela</h3>
-            <p>Trucos profesionales para eliminar manchas difíciles sin dañar las fibras...</p>
-            <a href="limpieza-tapiceria.html">Leer guía completa →</a>
-        </div>
-    </section>
+    </div>
 
-    <footer>
-        <p>&copy; 2026 SuperDetail - Expertos en Automotores</p>
-    </footer>
+    <div class="grid">
+        <div class="card">
+            <h3>Mantenimiento de Inyectores Diésel</h3>
+            <p>Aprende a identificar fallas de potencia y cómo realizar el purgado manual del sistema en motores 3.0...</p>
+            <a href="mantenimiento-inyectores.html" class="btn">Leer Guía Completa →</a>
+        </div>
+
+        <div class="card">
+            <h3>Restauración de Tapicería</h3>
+            <p>Trucos profesionales para eliminar manchas difíciles en asientos de tela sin dañar las fibras ni dejar humedad...</p>
+            <a href="limpieza-tapiceria.html" class="btn">Leer Guía Completa →</a>
+        </div>
+
+        <div class="card">
+            <h3>Próximamente: Pulido de Faros</h3>
+            <p>Cómo eliminar el tono amarillento y recuperar la claridad de fábrica con lijado al agua y protección UV...</p>
+            <a href="#" class="btn" style="background:#ccc;">Muy pronto</a>
+        </div>
+    </div>
+
+    <div class="about">
+        <h2>Sobre SuperDetail</h2>
+        <p>En SuperDetail compartimos conocimiento técnico real para el cuidado de tu vehículo. Desde mecánica especializada hasta el más mínimo detalle estético en Milagro, Ecuador.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 SuperDetail. Todos los derechos reservados.<br>Milagro, Guayas.</p>
+</footer>
+
 </body>
 </html>
