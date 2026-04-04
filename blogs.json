@@ -22,5 +22,11 @@
     "descripcion": "Técnicas avanzadas de corrección de laca y física de reflexión lumínica.",
     "url": "pulido-pintura.html",
     "categoria": "Detailing"
+  },
+  {
+    "titulo": "¿Cómo influye la geometría de suspensión en la seguridad?",
+    "descripcion": "Análisis sobre ángulos de caída (Camber), convergencia y la física detrás del control de estabilidad en curvas.",
+    "url": "suspension.html",
+    "categoria": "Mecánica"
   }
 ]
