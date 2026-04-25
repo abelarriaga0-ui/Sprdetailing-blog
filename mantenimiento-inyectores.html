@@ -1,246 +1,149 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingeniería de Sistemas de Inyección: Guía Completa de Limpieza y Diagnóstico | Detailing Pro</title>
-    <meta name="description" content="Manual técnico exhaustivo sobre mantenimiento de inyectores, limpieza por ultrasonido, cavitación y diagnóstico de sistemas de combustible.">
-    
-    <style>
-        :root {
-            --primary: #1a1a1a;
-            --accent: #e67e22;
-            --text: #333;
-            --bg: #f4f7f6;
-            --white: #ffffff;
-        }
-
-        body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.9;
-            color: var(--text);
-            background: var(--bg);
-            margin: 0;
-            padding: 0;
-        }
-
-        .navbar {
-            background: var(--primary);
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: 0.3s;
-        }
-        .navbar a:hover { color: var(--accent); }
-
-        header {
-            background: #111;
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-            border-bottom: 5px solid var(--accent);
-        }
-        .header-wrap {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        header h1 {
-            font-size: 2.8rem;
-            line-height: 1.2;
-            margin-bottom: 20px;
-        }
-
-        .main-container {
-            max-width: 800px;
-            margin: -40px auto 40px;
-            background: var(--white);
-            padding: 50px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            border-radius: 10px;
-        }
-
-        h2 {
-            color: var(--primary);
-            font-size: 2.2rem;
-            margin-top: 60px;
-            border-left: 6px solid var(--accent);
-            padding-left: 20px;
-            line-height: 1.2;
-        }
-        h3 {
-            color: var(--accent);
-            font-size: 1.6rem;
-            margin-top: 40px;
-        }
-        p {
-            margin-bottom: 25px;
-            text-align: justify;
-            font-size: 1.15rem;
-        }
-        ul, ol {
-            margin-bottom: 30px;
-            padding-left: 30px;
-        }
-        li { margin-bottom: 15px; font-size: 1.1rem; }
-
-        .tech-note {
-            background: #eef7ff;
-            border-left: 5px solid #3498db;
-            padding: 25px;
-            margin: 30px 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .faq-section {
-            margin-top: 60px;
-            background: #f9f9f9;
-            padding: 30px;
-            border-radius: 8px;
-        }
-
-        footer {
-            background: #111;
-            color: #ccc;
-            text-align: center;
-            padding: 50px;
-            margin-top: 50px;
-        }
-
-        @media (max-width: 768px) {
-            .main-container { padding: 25px; margin-top: 0; border-radius: 0; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingeniería de Sistemas de Inyección: Guía Completa de Limpieza y Diagnóstico | Detailing Pro</title>
+  <meta name="description" content="Manual técnico exhaustivo sobre mantenimiento de inyectores, limpieza por ultrasonido, cavitación y diagnóstico de sistemas de combustible.">
+  <link rel="stylesheet" href="assets/css/theme.css">
 </head>
 <body>
 
-<nav class="navbar">
-    <a href="index.html">Inicio</a>
-    <a href="inyectores.html">Inyectores</a>
-    <a href="limpieza-tapiceria.html">Tapicería</a>
-</nav>
+  <div id="site-header"></div>
 
-<header>
-    <div class="header-wrap">
-        <h1>Mantenimiento y Limpieza de Inyectores</h1>
-        <p>Optimización del sistema de combustible para máxima eficiencia y potencia.</p>
+  <section class="page-hero">
+    <div class="hero-inner">
+      <span class="hero-kicker">Ingeniería de combustión e inyección</span>
+      <h1>Mantenimiento y Limpieza de Inyectores</h1>
+      <p>Optimización del sistema de combustible mediante diagnóstico técnico, limpieza especializada y control del patrón de inyección.</p>
     </div>
-</header>
+  </section>
 
-<div class="main-container">
+  <div class="page-grid">
+    <aside class="ad-rail">
+      <div class="ad-box">Espacio reservado para publicidad</div>
+    </aside>
 
-    <p>El sistema de inyección electrónica es, sin duda, uno de los avances más significativos en la historia de la ingeniería automotriz. Sustituyendo al carburador, este sistema permite una dosificación precisa del combustible, adaptándose en tiempo real a las condiciones de carga, temperatura y altitud. Sin embargo, esta precisión tiene un costo: la sensibilidad extrema a la contaminación. En esta guía, desglosaremos los protocolos técnicos para mantener este sistema en condiciones óptimas.</p>
+    <main class="article-shell">
+      <p class="lead-intro">
+        El sistema de inyección electrónica representa uno de los avances más importantes en la ingeniería
+        automotriz moderna. Al reemplazar al carburador, permitió dosificar combustible con mucha mayor
+        precisión, ajustando la mezcla en función de carga, temperatura, altitud y demanda instantánea del
+        motor. Sin embargo, dicha precisión viene acompañada de una gran sensibilidad frente a la contaminación,
+        a la degradación química del combustible y a la acumulación de depósitos microscópicos en componentes
+        críticos. En esta guía se analizan los protocolos técnicos más relevantes para mantener el sistema en
+        condiciones óptimas de funcionamiento.
+      </p>
 
-    <h2>Capítulo 1: El Desafío de la Contaminación del Combustible</h2>
-    <p>A pesar de los filtros de combustible de alta eficiencia, partículas microscópicas y compuestos químicos complejos logran llegar a los inyectores. Existen tres tipos principales de residuos que afectan el rendimiento:</p>
-    
-    <h3>1.1 Barnices y Gomas de Hidrocarburos</h3>
-    <p>Cuando apagamos el motor, el calor residual calienta el combustible que queda atrapado en la punta de los inyectores. Este calor hace que las fracciones más ligeras de la gasolina se evaporen, dejando atrás una capa pegajosa de gomas y barnices. Con el tiempo, esta capa se endurece y reduce el diámetro interno de la tobera del inyector, alterando el patrón de aspersión.</p>
+      <div class="quick-index">
+        <h3>Contenido del artículo</h3>
+        <ul>
+          <li><a href="#cap1">Capítulo 1: El desafío de la contaminación del combustible</a></li>
+          <li><a href="#cap2">Capítulo 2: Limpieza profesional por ultrasonido</a></li>
+          <li><a href="#cap3">Capítulo 3: Diagnóstico por escáner OBD2</a></li>
+          <li><a href="#cap4">Capítulo 4: Enlaces de navegación técnica</a></li>
+          <li><a href="#cap5">Capítulo 5: Glosario de inyección electrónica</a></li>
+        </ul>
+      </div>
 
-    <h3>1.2 Carbonilla y Depósitos de Combustión</h3>
-    <p>En la cámara de combustión, las temperaturas pueden superar los 2,000°C. Si el inyector gotea o tiene un patrón de rociado deficiente, el combustible no se quema por completo, generando hollín o carbonilla. Este residuo sólido se adhiere a la punta del inyector (nozzle), obstruyendo los orificios microscópicos y provocando un ciclo vicioso de mala combustión y más suciedad.</p>
+      <h2 id="cap1">Capítulo 1: El Desafío de la Contaminación del Combustible</h2>
+      <p>
+        A pesar del uso de filtros de combustible de alta eficiencia, partículas microscópicas, residuos
+        orgánicos y compuestos químicos complejos terminan alcanzando la zona de inyección. Debido al diámetro
+        extremadamente reducido de las toberas y a la precisión temporal con que trabaja cada inyector, incluso
+        una alteración mínima puede afectar atomización, caudal, pulverización y calidad de combustión.
+      </p>
 
-    <div class="tech-note">
-        <strong>Análisis Técnico:</strong> Un inyector promedio opera a una frecuencia de milisegundos. Un retraso de apenas 0.5ms en la apertura debido a la suciedad puede resultar en una pérdida de eficiencia del 15%, lo que se traduce directamente en un mayor gasto de combustible y pérdida de torque.
-    </div>
+      <h3>1.1 Barnices y gomas de hidrocarburos</h3>
+      <p>
+        Cuando el motor se apaga, el calor residual permanece activo alrededor del múltiple, de la rampa de
+        combustible y de la punta del inyector. Ese entorno térmico favorece la evaporación de las fracciones
+        más ligeras del combustible y deja tras de sí residuos pegajosos compuestos por barnices y gomas.
+        Con el tiempo, estos depósitos reducen el diámetro útil de paso y modifican el patrón de aspersión,
+        generando una combustión menos homogénea.
+      </p>
 
-    <h2>Capítulo 2: Limpieza Profesional por Ultrasonido</h2>
-    <p>La limpieza por ultrasonido es el único método que garantiza una restauración del 100% de la capacidad de flujo. Este proceso no se limita a "lavar" el inyector, sino que utiliza principios físicos avanzados para desintegrar la suciedad interna.</p>
+      <h3>1.2 Carbonilla y depósitos de combustión</h3>
+      <p>
+        En la cámara de combustión, las temperaturas son suficientemente elevadas como para que cualquier
+        desviación del patrón de rociado se traduzca en combustión incompleta. Si el inyector gotea, rocía de
+        forma asimétrica o presenta obstrucción parcial, una parte del combustible no se quema correctamente y
+        termina formando hollín o carbonilla. Dicho residuo puede adherirse a la punta del inyector y agravar
+        todavía más el problema, creando un ciclo acumulativo de suciedad y bajo rendimiento.
+      </p>
 
-    <h3>2.1 El Proceso de Cavitación</h3>
-    <p>En una tina de ultrasonido, se generan ondas de alta frecuencia que crean millones de micro-burbujas en el líquido de limpieza. Estas burbujas implosionan con una fuerza enorme en una escala microscópica, un fenómeno llamado cavitación. Esta energía desprende los barnices incrustados en los filtros internos del inyector y en las paredes de la aguja, algo imposible de lograr con aditivos químicos agregados al tanque.</p>
+      <div class="tech-note">
+        <strong>Análisis técnico:</strong> un inyector trabaja en escalas de tiempo de milisegundos. Variaciones
+        muy pequeñas en apertura, cierre o caudal pueden alterar la mezcla aire-combustible, afectar torque,
+        incrementar consumo y deteriorar la respuesta del motor bajo carga.
+      </div>
 
-    <h3>2.2 Banco de Pruebas y Balanceado</h3>
-    <p>Tras la limpieza, es obligatorio pasar los inyectores por un banco de pruebas. Aquí se miden tres parámetros críticos:</p>
-    <ul>
-        <li><strong>Prueba de Goteo:</strong> Se aplica presión nominal sin activar el inyector. Si gotea, el asiento de la aguja está dañado o sucio.</li>
-        <li><strong>Prueba de Abanico:</strong> Se visualiza el patrón de rociado. Debe ser una neblina cónica perfecta, no un chorro sólido.</li>
-        <li><strong>Prueba de Caudal (Balanceado):</strong> Se activan todos los inyectores durante un tiempo determinado. La diferencia de volumen entre el que más entrega y el que menos entrega no debe superar el 3-5%.</li>
-    </ul>
+      <h2 id="cap2">Capítulo 2: Limpieza Profesional por Ultrasonido</h2>
+      <p>
+        La limpieza por ultrasonido es uno de los procedimientos más eficaces para recuperar el funcionamiento
+        de un inyector contaminado. A diferencia de los aditivos vertidos en el tanque, este método actúa sobre
+        el componente desmontado y permite intervenir tanto en la parte externa como en conductos internos,
+        filtros y superficies donde los residuos se adhieren con mayor persistencia.
+      </p>
 
-    <h2>Capítulo 3: Diagnóstico por Escáner (OBD2)</h2>
-    <p>Antes de desmontar, un técnico profesional analiza los "Fuel Trims" (Ajustes de combustible). Si el STFT (Short Term Fuel Trim) muestra valores positivos altos (ej. +20%), significa que la computadora está detectando una mezcla pobre y está intentando inyectar más gasolina para compensar la obstrucción de los inyectores.</p>
+      <h3>2.1 El proceso de cavitación</h3>
+      <p>
+        Dentro de una tina ultrasónica, las ondas de alta frecuencia generan millones de microburbujas en el
+        líquido de limpieza. Estas burbujas colapsan violentamente a escala microscópica, produciendo un fenómeno
+        conocido como cavitación. La energía liberada permite desprender barnices, residuos endurecidos y
+        depósitos finos adheridos a zonas de difícil acceso dentro del inyector.
+      </p>
 
-    <div class="tech-note">
-        <strong>Dato de Valor:</strong> Inyectores sucios pueden causar el sobrecalentamiento del catalizador. Al no quemarse bien el combustible, este termina quemándose dentro del catalizador, elevando su temperatura por encima de los límites de diseño y fundiendo sus celdas cerámicas.
-    </div>
+      <h3>2.2 Banco de pruebas y balanceado</h3>
+      <p>
+        Una vez finalizada la limpieza, el inyector debe pasar por banco de pruebas. Esta etapa no es un lujo,
+        sino una validación funcional indispensable. Allí se comprueba estanqueidad, patrón de abanico y
+        uniformidad de caudal. Si varios inyectores entregan volúmenes distintos, el motor recibirá una mezcla
+        desequilibrada entre cilindros, afectando suavidad, rendimiento térmico y emisiones.
+      </p>
 
-    <h2>Capítulo 4: FAQ - Consultas Técnicas Frecuentes</h2>
-    <p>En esta sección resolvemos las dudas más comunes de nuestros usuarios sobre el sistema de inyección:</p>
+      <ul>
+        <li><strong>Prueba de goteo:</strong> verifica si el inyector sella correctamente bajo presión sin activación.</li>
+        <li><strong>Prueba de abanico:</strong> permite evaluar si el patrón de pulverización es fino, uniforme y simétrico.</li>
+        <li><strong>Prueba de caudal:</strong> compara el volumen entregado por cada inyector durante un tiempo controlado.</li>
+      </ul>
 
-    <div id="dynamic-faq" class="faq-section">
-        <h2>Preguntas y Enlaces Sugeridos</h2>
-        <div id="faq-placeholder">Cargando guías automáticas...</div>
-    </div>
+      <h2 id="cap3">Capítulo 3: Diagnóstico por Escáner OBD2</h2>
+      <p>
+        Antes de desmontar, un técnico con criterio debe interpretar datos de diagnóstico. El análisis de fuel
+        trims, correcciones de mezcla, misfires y comportamiento en ralentí puede orientar de forma muy precisa
+        hacia un problema de inyección. Cuando la unidad de control detecta mezcla pobre, suele compensar
+        aumentando los ajustes de combustible. Si ese comportamiento es persistente, puede existir obstrucción,
+        desequilibrio de caudal o deficiencia en pulverización.
+      </p>
 
-    <h2>Capítulo 5: Glosario de Inyección Electrónica</h2>
-    <p><strong>ECU (Electronic Control Unit):</strong> El cerebro que controla el tiempo de apertura de los inyectores basado en sensores.</p>
-    <p><strong>Pulso de Inyección:</strong> El tiempo, medido en milisegundos, que el inyector permanece abierto en cada ciclo.</p>
-    <p><strong>Duty Cycle:</strong> El porcentaje de tiempo que el inyector está abierto respecto al tiempo total disponible en un ciclo de motor.</p>
-    <p><strong>Presión de Riel:</strong> La presión constante a la que se encuentra el combustible esperando ser inyectado (usualmente entre 35 y 60 PSI en motores de gasolina convencionales).</p>
+      <div class="tech-note">
+        <strong>Dato de valor:</strong> inyectores sucios no solo afectan consumo y respuesta. También pueden
+        elevar la temperatura del catalizador, ya que parte del combustible mal quemado termina reaccionando
+        fuera de la cámara de combustión y sobrecargando térmicamente el sistema de escape.
+      </div>
 
-</div>
+      <h2 id="cap4">Capítulo 4: Enlaces de Navegación Técnica</h2>
+      <section class="faq-section">
+        <h2>Enlaces de navegación técnica</h2>
+        <div id="faq-engine-container"></div>
+      </section>
 
-<footer>
-    <p><strong>Manual de Ingeniería Automotriz</strong><br>
-    Guías técnicas para el mantenimiento de alto nivel.<br>
-    &copy; 2026 Todos los derechos reservados.</p>
-</footer>
+      <h2 id="cap5">Capítulo 5: Glosario de Inyección Electrónica</h2>
+      <p><strong>ECU (Electronic Control Unit):</strong> unidad electrónica encargada de procesar datos de sensores y controlar el tiempo de inyección.</p>
+      <p><strong>Pulso de inyección:</strong> intervalo temporal durante el cual el inyector permanece abierto en cada ciclo.</p>
+      <p><strong>Duty cycle:</strong> porcentaje del tiempo disponible en el que el inyector se mantiene activo respecto al ciclo total.</p>
+      <p><strong>Presión de riel:</strong> presión del combustible en la rampa antes de ser suministrado a cada inyector.</p>
+    </main>
 
-<script>
-    async function loadFAQs() {
-        const placeholder = document.getElementById('faq-placeholder');
-        const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    <aside class="ad-rail">
+      <div class="ad-box">Espacio reservado para publicidad</div>
+    </aside>
+  </div>
 
-        try {
-            const response = await fetch('blogs.json');
-            const blogs = await response.json();
-            
-            let html = '';
-            const otrosBlogs = blogs.filter(b => b.url !== currentPath);
+  <div id="site-footer"></div>
 
-            otrosBlogs.forEach(blog => {
-                html += `
-                <a href="${blog.url}" style="text-decoration: none; color: inherit; display: block; margin-bottom: 15px;">
-                    <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #eee; transition: 0.3s; cursor: pointer; display: flex; justify-content: space-between; align-items: center;" 
-                         onmouseover="this.style.borderColor='#e67e22'; this.style.transform='translateY(-2px)';" 
-                         onmouseout="this.style.borderColor='#eee'; this.style.transform='translateY(0)';">
-                        
-                        <div style="flex: 1;">
-                            <span style="display: block; font-weight: bold; font-size: 1.15rem; margin-bottom: 5px; color: #1a1a1a;">
-                                ${blog.titulo}
-                            </span>
-                            <span style="font-size: 0.9rem; color: #666;">
-                                ${blog.descripcion}
-                            </span>
-                        </div>
-                        
-                        <span style="color: #e67e22; font-size: 1.5rem; margin-left: 20px;">→</span>
-                    </div>
-                </a>
-                `;
-            });
-
-            placeholder.innerHTML = html || '<p>Más guías técnicas próximamente.</p>';
-        } catch (error) {
-            console.error('Error cargando el cerebro central:', error);
-            placeholder.innerHTML = '';
-        }
-    }
-    loadFAQs();
-</script>
-
+  <script src="assets/js/site-shell.js"></script>
+  <script src="assets/js/faq-engine.js"></script>
 </body>
 </html>
