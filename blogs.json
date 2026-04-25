@@ -1,31 +1,31 @@
 [
   {
     "titulo": "¿Cómo limpiar la tapicería sin dejar olores?",
-    "descripcion": "El secreto profesional está en el secado controlado y el uso de neutralizadores de pH para evitar la humedad.",
+    "descripcion": "El secreto profesional está en el secado controlado, la extracción profunda y la neutralización de pH.",
     "url": "limpieza-tapiceria.html",
     "categoria": "Detailing"
   },
   {
-    "titulo": "¿Cuándo es necesario limpiar los inyectores?",
-    "descripcion": "Aprende a identificar fallos en el ralentí y pérdida de potencia antes de que sea tarde.",
+    "titulo": "¿Cuándo es necesario realizar mantenimiento de inyectores diésel?",
+    "descripcion": "Identifica pérdida de atomización, fallos de combustión y síntomas de obstrucción en sistemas diésel modernos.",
     "url": "mantenimiento-inyectores.html",
     "categoria": "Mecánica"
   },
   {
-    "titulo": "¿Se pueden recuperar faros opacos por el sol?",
-    "descripcion": "Técnicas de lijado al agua y sellado cerámico para devolver la transparencia total.",
+    "titulo": "¿Cómo restaurar faros amarillentos?",
+    "descripcion": "Guía completa sobre lijado micrométrico, corrección óptica superficial y protección UV duradera.",
     "url": "faros.html",
     "categoria": "Exterior"
   },
   {
     "titulo": "¿Cómo lograr un brillo de espejo en la pintura?",
-    "descripcion": "Técnicas avanzadas de corrección de laca y física de reflexión lumínica.",
+    "descripcion": "Técnicas avanzadas de corrección de laca, abrasión controlada y física de reflexión especular.",
     "url": "pulido-pintura.html",
     "categoria": "Detailing"
   },
   {
     "titulo": "¿Cómo influye la geometría de suspensión en la seguridad?",
-    "descripcion": "Análisis sobre ángulos de caída (Camber), convergencia y la física detrás del control de estabilidad en curvas.",
+    "descripcion": "Análisis técnico sobre camber, convergencia, transferencia de carga y estabilidad del vehículo.",
     "url": "suspension.html",
     "categoria": "Mecánica"
   }
