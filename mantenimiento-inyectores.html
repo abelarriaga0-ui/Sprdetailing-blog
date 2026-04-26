@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ingeniería de Sistemas de Inyección: Guía Completa de Limpieza y Diagnóstico | Detailing Pro</title>
-  <meta name="description" content="Manual técnico exhaustivo sobre mantenimiento de inyectores, limpieza por ultrasonido, cavitación y diagnóstico de sistemas de combustible.">
+  <title>Ingeniería de Sistemas de Inyección Diésel: Diagnóstico, Limpieza y Validación | Detailing Pro</title>
+  <meta name="description" content="Guía técnica completa sobre diagnóstico, limpieza y validación de inyectores diésel. Incluye contaminación del combustible, ultrasonido, banco de pruebas y análisis OBD2.">
   <link rel="stylesheet" href="assets/css/theme.css">
 </head>
 <body>
@@ -14,8 +14,11 @@
   <section class="page-hero">
     <div class="hero-inner">
       <span class="hero-kicker">Ingeniería de combustión e inyección</span>
-      <h1>Mantenimiento y Limpieza de Inyectores</h1>
-      <p>Optimización del sistema de combustible mediante diagnóstico técnico, limpieza especializada y control del patrón de inyección.</p>
+      <h1>Mantenimiento de Inyectores Diésel</h1>
+      <p>
+        Diagnóstico técnico, limpieza especializada y validación funcional del sistema de inyección
+        para preservar atomización, eficiencia térmica y estabilidad de combustión.
+      </p>
     </div>
   </section>
 
@@ -25,115 +28,250 @@
     </aside>
 
     <main class="article-shell">
+
       <p class="lead-intro">
-        El sistema de inyección electrónica representa uno de los avances más importantes en la ingeniería
-        automotriz moderna. Al reemplazar al carburador, permitió dosificar combustible con mucha mayor
-        precisión, ajustando la mezcla en función de carga, temperatura, altitud y demanda instantánea del
-        motor. Sin embargo, dicha precisión viene acompañada de una gran sensibilidad frente a la contaminación,
-        a la degradación química del combustible y a la acumulación de depósitos microscópicos en componentes
-        críticos. En esta guía se analizan los protocolos técnicos más relevantes para mantener el sistema en
-        condiciones óptimas de funcionamiento.
+        El sistema de inyección diésel moderno constituye uno de los subconjuntos más exigentes del motor de
+        combustión interna. A diferencia de sistemas más rudimentarios, la inyección contemporánea trabaja con
+        tolerancias extremadamente reducidas, presiones elevadas y tiempos de activación medidos en milisegundos.
+        Esto permite una dosificación precisa del combustible, una atomización más fina y una combustión más
+        eficiente. Sin embargo, esa misma precisión vuelve al sistema altamente sensible a la contaminación,
+        a la degradación química del combustible y a la formación progresiva de depósitos internos.
       </p>
+
+      <figure class="figure-card">
+        <img src="assets/img/inyectores/hero-inyectores.png" alt="Conjunto de inyectores diésel, riel de combustible y componentes del sistema de inyección sobre un banco de trabajo automotriz">
+        <figcaption>
+          Vista general de un sistema de inyección diésel desmontado. En aplicaciones modernas, la calidad del
+          mantenimiento depende tanto del estado individual del inyector como de la integridad del riel, conexiones
+          y alimentación de combustible.
+        </figcaption>
+      </figure>
 
       <div class="quick-index">
         <h3>Contenido del artículo</h3>
         <ul>
-          <li><a href="#cap1">Capítulo 1: El desafío de la contaminación del combustible</a></li>
+          <li><a href="#cap1">Capítulo 1: ¿Por qué se ensucian los inyectores diésel?</a></li>
           <li><a href="#cap2">Capítulo 2: Limpieza profesional por ultrasonido</a></li>
-          <li><a href="#cap3">Capítulo 3: Diagnóstico por escáner OBD2</a></li>
-          <li><a href="#cap4">Capítulo 4: Enlaces de navegación técnica</a></li>
-          <li><a href="#cap5">Capítulo 5: Glosario de inyección electrónica</a></li>
+          <li><a href="#cap3">Capítulo 3: Diagnóstico previo con escáner y análisis funcional</a></li>
+          <li><a href="#cap4">Capítulo 4: Validación en banco de pruebas</a></li>
+          <li><a href="#cap5">Capítulo 5: Resultados, prevención y conclusión técnica</a></li>
         </ul>
       </div>
 
-      <h2 id="cap1">Capítulo 1: El Desafío de la Contaminación del Combustible</h2>
+      <h2 id="cap1">Capítulo 1: ¿Por qué se ensucian los inyectores diésel?</h2>
       <p>
-        A pesar del uso de filtros de combustible de alta eficiencia, partículas microscópicas, residuos
-        orgánicos y compuestos químicos complejos terminan alcanzando la zona de inyección. Debido al diámetro
-        extremadamente reducido de las toberas y a la precisión temporal con que trabaja cada inyector, incluso
-        una alteración mínima puede afectar atomización, caudal, pulverización y calidad de combustión.
+        Aunque el sistema cuente con filtración, el combustible nunca está completamente libre de impurezas.
+        A lo largo del tiempo, residuos microscópicos, humedad, compuestos pesados y trazas de oxidación pueden
+        atravesar el circuito y depositarse en componentes críticos. El inyector, por su geometría interna y por
+        el reducido diámetro de sus pasos de pulverización, es especialmente vulnerable a este fenómeno.
       </p>
 
-      <h3>1.1 Barnices y gomas de hidrocarburos</h3>
-      <p>
-        Cuando el motor se apaga, el calor residual permanece activo alrededor del múltiple, de la rampa de
-        combustible y de la punta del inyector. Ese entorno térmico favorece la evaporación de las fracciones
-        más ligeras del combustible y deja tras de sí residuos pegajosos compuestos por barnices y gomas.
-        Con el tiempo, estos depósitos reducen el diámetro útil de paso y modifican el patrón de aspersión,
-        generando una combustión menos homogénea.
-      </p>
+      <section class="split-block">
+        <div class="split-text">
+          <h3>Depósitos carbonosos, barnices y alteración del patrón de rociado</h3>
+          <p>
+            Cuando el motor se apaga, el calor residual permanece activo en la culata, en la zona de la tobera y
+            en los conductos cercanos. Parte del combustible remanente sufre evaporación parcial y deja residuos
+            conocidos como barnices y gomas. Estos compuestos se adhieren a superficies metálicas internas y
+            modifican el flujo de combustible. Conforme aumenta la acumulación, la pulverización pierde simetría,
+            el abanico deja de ser homogéneo y la mezcla aire-combustible se vuelve menos eficiente.
+          </p>
+          <p>
+            En el entorno de la punta del inyector también pueden formarse depósitos carbonosos derivados de
+            combustión incompleta. Si el combustible no se atomiza con precisión o si existe goteo residual, parte
+            del diésel no quema correctamente y deja residuos adheridos. El resultado es una desviación progresiva
+            del patrón de inyección, aumento de humo, ralentí inestable y, en muchos casos, pérdida de respuesta
+            bajo carga.
+          </p>
+        </div>
 
-      <h3>1.2 Carbonilla y depósitos de combustión</h3>
-      <p>
-        En la cámara de combustión, las temperaturas son suficientemente elevadas como para que cualquier
-        desviación del patrón de rociado se traduzca en combustión incompleta. Si el inyector gotea, rocía de
-        forma asimétrica o presenta obstrucción parcial, una parte del combustible no se quema correctamente y
-        termina formando hollín o carbonilla. Dicho residuo puede adherirse a la punta del inyector y agravar
-        todavía más el problema, creando un ciclo acumulativo de suciedad y bajo rendimiento.
-      </p>
+        <figure class="split-media">
+          <img src="assets/img/inyectores/inyector-sucio-macro.png" alt="Macro de la punta de un inyector diésel con carbonilla, suciedad y depósitos adheridos en la tobera">
+          <figcaption>
+            La acumulación de carbonilla y residuos en la zona de la tobera altera la atomización. Incluso
+            obstrucciones microscópicas pueden modificar de forma crítica el comportamiento del inyector.
+          </figcaption>
+        </figure>
+      </section>
 
       <div class="tech-note">
-        <strong>Análisis técnico:</strong> un inyector trabaja en escalas de tiempo de milisegundos. Variaciones
-        muy pequeñas en apertura, cierre o caudal pueden alterar la mezcla aire-combustible, afectar torque,
-        incrementar consumo y deteriorar la respuesta del motor bajo carga.
+        <strong>Fundamento técnico:</strong> un inyector no falla únicamente cuando deja de abrir. Muchas veces
+        el problema real es una degradación del patrón de pulverización. En sistemas diésel, pequeñas variaciones
+        de caudal o de simetría del chorro pueden afectar combustión, consumo y emisiones.
       </div>
 
-      <h2 id="cap2">Capítulo 2: Limpieza Profesional por Ultrasonido</h2>
+      <h2 id="cap2">Capítulo 2: Limpieza profesional por ultrasonido</h2>
       <p>
-        La limpieza por ultrasonido es uno de los procedimientos más eficaces para recuperar el funcionamiento
-        de un inyector contaminado. A diferencia de los aditivos vertidos en el tanque, este método actúa sobre
-        el componente desmontado y permite intervenir tanto en la parte externa como en conductos internos,
-        filtros y superficies donde los residuos se adhieren con mayor persistencia.
+        La limpieza por ultrasonido es uno de los procedimientos más eficaces para recuperar la funcionalidad del
+        inyector cuando existe contaminación interna o externa. A diferencia de aditivos de tanque, esta técnica
+        interviene directamente sobre el componente desmontado, permitiendo atacar residuos persistentes en filtros,
+        conductos y zonas de difícil acceso.
       </p>
 
-      <h3>2.1 El proceso de cavitación</h3>
+      <section class="split-block reverse">
+        <div class="split-text">
+          <h3>Principio de cavitación y remoción microscópica de residuos</h3>
+          <p>
+            Dentro de una tina ultrasónica, las ondas de alta frecuencia generan millones de microburbujas en el
+            líquido de limpieza. Estas burbujas colapsan violentamente y liberan energía localizada a escala
+            microscópica. Este fenómeno, conocido como cavitación, ayuda a desprender barnices, residuos
+            endurecidos, partículas finas y suciedad adherida en zonas donde el cepillado o la limpieza superficial
+            serían insuficientes.
+          </p>
+          <p>
+            La eficacia del proceso depende de varios factores: química del detergente, temperatura del baño, tiempo
+            de exposición y condición interna del inyector. Un procedimiento serio no consiste solamente en “lavar”
+            la pieza, sino en aplicar una limpieza controlada que reduzca carga contaminante sin comprometer sellos,
+            geometrías o tolerancias internas.
+          </p>
+        </div>
+
+        <figure class="split-media">
+          <img src="assets/img/inyectores/limpieza-ultrasonido.png" alt="Proceso de limpieza de inyectores en tina ultrasónica dentro de un taller automotriz">
+          <figcaption>
+            La limpieza por ultrasonido permite intervenir con mayor profundidad sobre depósitos adheridos y
+            residuos acumulados en el cuerpo del inyector y sus zonas internas.
+          </figcaption>
+        </figure>
+      </section>
+
       <p>
-        Dentro de una tina ultrasónica, las ondas de alta frecuencia generan millones de microburbujas en el
-        líquido de limpieza. Estas burbujas colapsan violentamente a escala microscópica, produciendo un fenómeno
-        conocido como cavitación. La energía liberada permite desprender barnices, residuos endurecidos y
-        depósitos finos adheridos a zonas de difícil acceso dentro del inyector.
+        Después de la limpieza, es indispensable verificar el comportamiento funcional del inyector. Un inyector
+        visualmente limpio no necesariamente está listo para ser reinstalado. Debe comprobarse estanqueidad,
+        caudal y calidad de atomización, ya que el objetivo del mantenimiento no es mejorar la apariencia, sino
+        restituir precisión operativa.
       </p>
 
-      <h3>2.2 Banco de pruebas y balanceado</h3>
+      <h2 id="cap3">Capítulo 3: Diagnóstico previo con escáner y análisis funcional</h2>
       <p>
-        Una vez finalizada la limpieza, el inyector debe pasar por banco de pruebas. Esta etapa no es un lujo,
-        sino una validación funcional indispensable. Allí se comprueba estanqueidad, patrón de abanico y
-        uniformidad de caudal. Si varios inyectores entregan volúmenes distintos, el motor recibirá una mezcla
-        desequilibrada entre cilindros, afectando suavidad, rendimiento térmico y emisiones.
+        Antes de desmontar el sistema, el análisis electrónico ofrece información valiosa. En motores modernos,
+        la unidad de control puede revelar indicios de desequilibrio de mezcla, correcciones anómalas de
+        combustible o eventos de combustión irregulares. El uso de escáner no reemplaza la inspección física,
+        pero sí ayuda a orientar el diagnóstico con mayor criterio.
       </p>
+
+      <section class="split-block">
+        <div class="split-text">
+          <h3>Interpretación de datos OBD2 y síntomas operativos</h3>
+          <p>
+            En un proceso de diagnóstico serio conviene revisar comportamiento de ralentí, correcciones de
+            combustible, fallos de encendido, presión de riel y respuesta del motor bajo aceleración. Si la ECU
+            compensa de forma persistente, puede existir una alteración en la cantidad efectiva de combustible
+            inyectado. Esto no siempre implica una falla eléctrica del inyector; muchas veces refleja suciedad,
+            patrón de rociado deficiente o diferencias de caudal entre cilindros.
+          </p>
+          <p>
+            En la práctica, el técnico debe correlacionar la información del escáner con los síntomas percibidos:
+            humo excesivo, pérdida de potencia, vibración, arranque difícil o consumo elevado. Solo cuando el
+            diagnóstico se integra con pruebas reales se puede decidir si corresponde desmontar, limpiar o
+            profundizar en otras áreas del sistema de combustible.
+          </p>
+        </div>
+
+        <figure class="split-media">
+          <img src="assets/img/inyectores/diagnostico-obd2-inyectores.png" alt="Técnico automotriz realizando diagnóstico OBD2 en un motor con un escáner electrónico">
+          <figcaption>
+            El análisis con escáner ayuda a detectar desviaciones de funcionamiento antes de desmontar. La lectura
+            de parámetros puede orientar si el problema se relaciona con inyección, presión de combustible o
+            calidad de combustión.
+          </figcaption>
+        </figure>
+      </section>
+
+      <div class="tech-note">
+        <strong>Dato de ingeniería:</strong> en motores diésel, un inyector con pulverización deficiente puede
+        afectar no solo el rendimiento del cilindro asociado, sino también la carga térmica del sistema de escape,
+        del turbocompresor y de los sistemas de postratamiento.
+      </div>
+
+      <h2 id="cap4">Capítulo 4: Validación en banco de pruebas</h2>
+      <p>
+        Una vez limpia la pieza, el banco de pruebas se convierte en la etapa crítica de validación. Aquí se
+        comprueba si el inyector mantiene estanqueidad, si el patrón de aspersión es uniforme y si el caudal
+        entregado se encuentra dentro de un rango funcional aceptable. Este paso separa una limpieza superficial
+        de un mantenimiento técnicamente confiable.
+      </p>
+
+      <section class="split-block reverse">
+        <div class="split-text">
+          <h3>Prueba de abanico, caudal y equilibrio entre inyectores</h3>
+          <p>
+            En el banco, varios inyectores pueden compararse simultáneamente bajo condiciones controladas. El
+            observador debe verificar si las pulverizaciones presentan forma similar, si no existe goteo anómalo
+            y si el volumen descargado en cada probeta mantiene consistencia. Diferencias apreciables entre
+            cilindros indican desequilibrio, lo cual puede traducirse en funcionamiento irregular del motor.
+          </p>
+          <p>
+            También se evalúa la capacidad del inyector para cerrar correctamente. Un inyector que no sella bien
+            puede gotear, enriquecer localmente la combustión y favorecer formación de carbonilla. Por eso, la
+            prueba de banco no es un accesorio del proceso: es la confirmación objetiva de que la intervención
+            realmente recuperó la funcionalidad del componente.
+          </p>
+        </div>
+
+        <figure class="split-media">
+          <img src="assets/img/inyectores/banco-pruebas-inyectores.png" alt="Banco de pruebas de inyectores con pulverización visible hacia probetas graduadas">
+          <figcaption>
+            Banco de pruebas de inyectores diésel. La comparación de pulverización y caudal entre varias unidades
+            permite detectar desviaciones, goteo o diferencias que afectarían el equilibrio de combustión.
+          </figcaption>
+        </figure>
+      </section>
 
       <ul>
-        <li><strong>Prueba de goteo:</strong> verifica si el inyector sella correctamente bajo presión sin activación.</li>
-        <li><strong>Prueba de abanico:</strong> permite evaluar si el patrón de pulverización es fino, uniforme y simétrico.</li>
-        <li><strong>Prueba de caudal:</strong> compara el volumen entregado por cada inyector durante un tiempo controlado.</li>
+        <li><strong>Prueba de estanqueidad:</strong> confirma que el inyector no gotea cuando debería permanecer cerrado.</li>
+        <li><strong>Prueba de abanico:</strong> verifica uniformidad de atomización y calidad del patrón de pulverización.</li>
+        <li><strong>Prueba de caudal:</strong> compara el volumen descargado por cada inyector bajo un mismo tiempo y condición.</li>
+        <li><strong>Prueba comparativa:</strong> permite evaluar si existe desequilibrio entre cilindros antes de reinstalar el conjunto.</li>
       </ul>
 
-      <h2 id="cap3">Capítulo 3: Diagnóstico por Escáner OBD2</h2>
+      <h2 id="cap5">Capítulo 5: Resultados, prevención y conclusión técnica</h2>
       <p>
-        Antes de desmontar, un técnico con criterio debe interpretar datos de diagnóstico. El análisis de fuel
-        trims, correcciones de mezcla, misfires y comportamiento en ralentí puede orientar de forma muy precisa
-        hacia un problema de inyección. Cuando la unidad de control detecta mezcla pobre, suele compensar
-        aumentando los ajustes de combustible. Si ese comportamiento es persistente, puede existir obstrucción,
-        desequilibrio de caudal o deficiencia en pulverización.
+        Un mantenimiento bien ejecutado produce mejoras visibles en el comportamiento del motor: ralentí más
+        estable, mejor respuesta al acelerador, menor tendencia al humo, reducción de vibraciones y recuperación
+        de eficiencia. Sin embargo, el resultado más importante no es visual ni subjetivo, sino funcional: una
+        dosificación más precisa del combustible y una combustión más uniforme.
       </p>
 
+      <section class="split-block">
+        <div class="split-text">
+          <h3>Antes y después de una intervención técnica adecuada</h3>
+          <p>
+            La comparación entre una pieza contaminada y una correctamente restaurada muestra con claridad el
+            impacto del proceso. La eliminación de depósitos, la recuperación de superficies y la validación
+            posterior permiten devolver al inyector una condición operativa mucho más cercana a su comportamiento
+            esperado. Esto incrementa la confiabilidad general del sistema de combustible y reduce la probabilidad
+            de desequilibrios entre cilindros.
+          </p>
+          <p>
+            Para prolongar los resultados, conviene mantener una rutina preventiva: combustible de buena calidad,
+            filtros en intervalos adecuados, revisión periódica ante síntomas tempranos y atención al comportamiento
+            de arranque, humo o consumo. En ingeniería de mantenimiento, intervenir antes de la falla severa casi
+            siempre reduce costo, riesgo y degradación secundaria.
+          </p>
+        </div>
+
+        <figure class="split-media">
+          <img src="assets/img/inyectores/antes-despues-inyector.png" alt="Comparativa visual de un inyector diésel antes y después del proceso de limpieza y mantenimiento">
+          <figcaption>
+            Comparación entre un inyector con suciedad severa y una unidad intervenida. La restauración adecuada
+            no solo mejora la apariencia, sino que debe ir acompañada de validación funcional.
+          </figcaption>
+        </figure>
+      </section>
+
       <div class="tech-note">
-        <strong>Dato de valor:</strong> inyectores sucios no solo afectan consumo y respuesta. También pueden
-        elevar la temperatura del catalizador, ya que parte del combustible mal quemado termina reaccionando
-        fuera de la cámara de combustión y sobrecargando térmicamente el sistema de escape.
+        <strong>Conclusión técnica:</strong> el mantenimiento de inyectores diésel no debe reducirse a una limpieza
+        empírica o a la aplicación de aditivos genéricos. Se trata de un procedimiento de precisión que combina
+        diagnóstico, descontaminación, validación y criterio mecánico. Cuando se ejecuta correctamente, protege el
+        rendimiento del motor, la eficiencia de combustión y la durabilidad del sistema de inyección.
       </div>
 
-      <h2 id="cap4">Capítulo 4: Enlaces de Navegación Técnica</h2>
       <section class="faq-section">
         <h2>Enlaces de navegación técnica</h2>
         <div id="faq-engine-container"></div>
       </section>
 
-      <h2 id="cap5">Capítulo 5: Glosario de Inyección Electrónica</h2>
-      <p><strong>ECU (Electronic Control Unit):</strong> unidad electrónica encargada de procesar datos de sensores y controlar el tiempo de inyección.</p>
-      <p><strong>Pulso de inyección:</strong> intervalo temporal durante el cual el inyector permanece abierto en cada ciclo.</p>
-      <p><strong>Duty cycle:</strong> porcentaje del tiempo disponible en el que el inyector se mantiene activo respecto al ciclo total.</p>
-      <p><strong>Presión de riel:</strong> presión del combustible en la rampa antes de ser suministrado a cada inyector.</p>
     </main>
 
     <aside class="ad-rail">
