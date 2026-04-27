@@ -3,9 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tratado de Ingeniería de Suspensión y Dinámica de Chasis | Detailing Pro</title>
-  <meta name="description" content="Manual técnico sobre suspensión automotriz, amortiguación, geometría de alineación, transferencia de carga y dinámica de chasis.">
+
+  <title>Suspensión de un Auto: Partes, Tipos, Mantenimiento y Diagnóstico | Detailing Pro</title>
+  <meta name="description" content="Guía técnica sobre suspensión de un auto, partes del sistema de suspensión, tipos de suspensión automotriz, mantenimiento paso a paso, amortiguadores, bujes, rótulas y alineación.">
+
   <link rel="stylesheet" href="assets/css/theme.css">
+
+  <style>
+    .cover-image {
+      max-width: 620px;
+      margin: 28px auto 42px;
+    }
+
+    .cover-image img {
+      width: 100%;
+      max-height: 320px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    @media (max-width: 820px) {
+      .cover-image {
+        max-width: 100%;
+      }
+
+      .cover-image img {
+        max-height: 250px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -14,8 +41,11 @@
   <section class="page-hero">
     <div class="hero-inner">
       <span class="hero-kicker">Dinámica vehicular aplicada</span>
-      <h1>Cinemática y Mantenimiento de Suspensión</h1>
-      <p>Análisis técnico sobre absorción de impactos, estabilidad del chasis, alineación y control dinámico del vehículo.</p>
+      <h1>Suspensión de un Auto: Partes, Tipos y Mantenimiento Técnico</h1>
+      <p>
+        Análisis de amortiguadores, resortes, bujes, rótulas, geometría de alineación,
+        tipos de suspensión automotriz y diagnóstico preventivo del sistema de suspensión.
+      </p>
     </div>
   </section>
 
@@ -25,146 +55,333 @@
     </aside>
 
     <main class="article-shell">
+
       <p class="lead-intro">
-        La suspensión de un vehículo no es simplemente un conjunto de resortes orientado al confort.
-        Es un sistema de ingeniería cuya función principal es mantener la huella de contacto del
-        neumático con el pavimento bajo aceleración, frenado, transferencia lateral de carga y
-        circulación sobre superficies irregulares. Cuando la suspensión trabaja correctamente,
-        el vehículo conserva estabilidad, capacidad de frenado y precisión direccional; cuando
-        falla, toda la dinámica del chasis se deteriora.
+        La suspensión de un auto es uno de los sistemas más importantes para la seguridad, el confort y la estabilidad
+        del vehículo. Aunque muchas veces se la asocia únicamente con suavidad al conducir, su función técnica va mucho
+        más allá: mantiene el contacto entre neumático y pavimento, controla el movimiento de la carrocería, estabiliza
+        el frenado, reduce vibraciones y permite que la dirección responda con precisión. Por eso, entender el sistema
+        de suspensión, sus partes y su mantenimiento paso a paso es fundamental para conservar el comportamiento original
+        del vehículo.
       </p>
+
+      <figure class="figure-card cover-image">
+        <img src="assets/img/suspension/hero-suspension.png" alt="Diagrama técnico de suspensión de un auto con neumáticos, brazos, resortes y amortiguadores">
+        <figcaption>
+          La suspensión trabaja como un conjunto dinámico. Resortes, amortiguadores, brazos, bujes y neumáticos
+          deben actuar coordinadamente para mantener estabilidad, control y adherencia.
+        </figcaption>
+      </figure>
 
       <div class="quick-index">
         <h3>Contenido del artículo</h3>
         <ul>
-          <li><a href="#cap1">Capítulo 1: La física del movimiento oscilatorio</a></li>
-          <li><a href="#cap2">Capítulo 2: Componentes críticos del chasis</a></li>
-          <li><a href="#cap3">Capítulo 3: Geometría de alineación avanzada</a></li>
-          <li><a href="#cap4">Capítulo 4: Diagnóstico de fatiga de materiales</a></li>
-          <li><a href="#cap5">Capítulo 5: Suspensión electrónica y magnética</a></li>
-          <li><a href="#cap6">Capítulo 6: Multi-link vs eje de torsión</a></li>
-          <li><a href="#cap7">Capítulo 7: Barras estabilizadoras y balanceo</a></li>
-          <li><a href="#cap8">Capítulo 8: Transferencia de pesos y frenado</a></li>
-          <li><a href="#cap9">Capítulo 9: Fatiga de metales y seguridad pasiva</a></li>
-          <li><a href="#cap10">Capítulo 10: Conclusión técnica</a></li>
+          <li><a href="#cap1">Capítulo 1: Qué es la suspensión de un auto</a></li>
+          <li><a href="#cap2">Capítulo 2: Partes del sistema de suspensión</a></li>
+          <li><a href="#cap3">Capítulo 3: Amortiguadores, resortes y control de oscilación</a></li>
+          <li><a href="#cap4">Capítulo 4: Tipos de suspensión automotriz</a></li>
+          <li><a href="#cap5">Capítulo 5: Geometría, alineación y estabilidad</a></li>
+          <li><a href="#cap6">Capítulo 6: Mantenimiento del sistema de suspensión paso a paso</a></li>
+          <li><a href="#cap7">Capítulo 7: Precio, diagnóstico y conclusión técnica</a></li>
         </ul>
       </div>
 
-      <h2 id="cap1">Capítulo 1: La Física del Movimiento Oscilatorio</h2>
+      <h2 id="cap1">Capítulo 1: Qué es la Suspensión de un Auto</h2>
+
       <p>
-        Cada irregularidad del pavimento introduce una perturbación vertical en la rueda. Si el sistema
-        estuviera compuesto únicamente por resortes, la carrocería oscilaría repetidamente debido al
-        almacenamiento y liberación sucesiva de energía elástica. El amortiguador existe para disipar
-        esa energía, transformándola en calor mediante el paso forzado del fluido hidráulico a través
-        de válvulas calibradas. De esta manera, el sistema deja de oscilar libremente y recupera control.
+        La suspensión de un auto es el conjunto de elementos mecánicos que conecta la carrocería con las ruedas.
+        Su misión es absorber irregularidades del camino, controlar el movimiento vertical del vehículo y mantener
+        la mayor superficie posible del neumático en contacto con el pavimento. Esto permite que el vehículo pueda
+        frenar, girar y acelerar con mayor estabilidad.
+      </p>
+
+      <p>
+        En búsquedas comunes aparece tanto “suspensión” como “suspención”, pero el término correcto es suspensión.
+        Independientemente de la forma en que se busque, el concepto técnico es el mismo: se trata de un sistema
+        encargado de gestionar energía, cargas y movimientos. No debe confundirse con “suspensión de suspender” en
+        sentido gramatical; en mecánica automotriz, suspensión se refiere al sistema físico que soporta y controla
+        el chasis.
       </p>
 
       <div class="tech-note">
-        <strong>Ecuación de amortiguamiento:</strong> de forma simplificada, la fuerza de amortiguación
-        puede representarse como <em>F = -cẋ</em>, donde <em>c</em> es el coeficiente de amortiguamiento
-        y <em>ẋ</em> la velocidad de desplazamiento del pistón. Cuando el amortiguador pierde eficiencia,
-        ese coeficiente efectivo disminuye y el vehículo comienza a rebotar más de lo debido.
+        <strong>Principio dinámico:</strong> un vehículo no se mantiene estable solo porque sus ruedas estén
+        alineadas. La suspensión debe controlar compresión, rebote, balanceo lateral, transferencia de peso y
+        contacto del neumático con el suelo.
       </div>
 
-      <h2 id="cap2">Capítulo 2: Componentes Críticos del Chasis</h2>
-
-      <h3>2.1 Silentblocks y bujes</h3>
-      <p>
-        Los bujes constituyen puntos de articulación elástica entre componentes del chasis. Su función
-        es absorber vibraciones de alta frecuencia, permitir desplazamientos controlados y evitar la
-        transmisión directa de ruido estructural al habitáculo. Con el tiempo, el caucho envejece,
-        pierde elasticidad y desarrolla grietas. Cuando esto ocurre, aparece juego mecánico y la
-        geometría deja de mantenerse bajo carga.
-      </p>
-
-      <h3>2.2 Rótulas y terminales de dirección</h3>
-      <p>
-        Estos elementos funcionan como articulaciones esféricas y permiten movimiento angular mientras
-        mantienen guiado estructural. Una rótula deteriorada no solo genera ruidos; también compromete
-        el control de la trayectoria. Incluso un pequeño juego axial o radial puede traducirse en
-        imprecisión de dirección, desgaste irregular de neumáticos y comportamiento errático en frenado.
-      </p>
-
-      <h2 id="cap3">Capítulo 3: Geometría de Alineación Avanzada</h2>
-      <p>
-        La alineación no consiste simplemente en “enderezar” ruedas. En dinámica vehicular intervienen
-        varios ángulos que definen cómo apoya el neumático y cómo responde el vehículo durante la marcha.
-      </p>
-
-      <ul>
-        <li><strong>Camber:</strong> inclinación de la rueda respecto a la vertical. Influye en apoyo lateral y desgaste del neumático.</li>
-        <li><strong>Caster:</strong> inclinación del eje de giro en vista lateral. Aporta estabilidad direccional y retorno del volante.</li>
-        <li><strong>Toe:</strong> convergencia o divergencia de las ruedas en vista superior. Afecta precisión lineal y comportamiento dinámico.</li>
-      </ul>
+      <h2 id="cap2">Capítulo 2: Partes del Sistema de Suspensión</h2>
 
       <p>
-        Un valor incorrecto en cualquiera de estos parámetros altera la distribución de carga en la banda
-        de rodadura, perjudica el comportamiento del chasis y acelera el desgaste de componentes asociados.
+        Cuando se habla de suspensión de un auto partes o sistema de suspensión partes, se hace referencia a todos
+        los componentes que permiten unir la rueda al chasis de manera controlada. Entre los elementos más importantes
+        se encuentran amortiguadores, resortes, brazos de control, bujes, rótulas, terminales, bieletas, barra
+        estabilizadora, copelas, soportes y, en algunos diseños, subchasis o estructuras auxiliares.
       </p>
 
-      <h2 id="cap4">Capítulo 4: Diagnóstico de Fatiga de Materiales</h2>
+      <section class="split-block">
+        <div class="split-text">
+          <h3>Bujes, rótulas y articulaciones del chasis</h3>
+          <p>
+            Los bujes son elementos elásticos que permiten movimiento controlado entre piezas metálicas. Su función
+            es absorber vibraciones, reducir ruido y evitar que la carrocería reciba impactos directos desde la
+            suspensión. Cuando el caucho se agrieta, se endurece o pierde elasticidad, aparecen holguras que alteran
+            la geometría del vehículo.
+          </p>
+
+          <p>
+            Las rótulas y terminales de dirección funcionan como articulaciones esféricas. Permiten que la rueda
+            cambie de ángulo durante el giro y el recorrido de suspensión. Una rótula con juego puede generar ruidos,
+            inestabilidad, vibración y desgaste irregular de neumáticos. Por eso, dentro de los componentes del
+            sistema de suspensión, estas piezas son críticas para la seguridad.
+          </p>
+        </div>
+
+        <figure class="split-media">
+          <img src="assets/img/suspension/bujes-rotulas.png" alt="Bujes, rótulas y brazo de control como partes del sistema de suspensión automotriz">
+          <figcaption>
+            Bujes y rótulas degradados modifican la geometría bajo carga, generan ruidos y reducen la precisión de
+            dirección.
+          </figcaption>
+        </figure>
+      </section>
+
+      <h2 id="cap3">Capítulo 3: Amortiguadores, Resortes y Control de Oscilación</h2>
+
       <p>
-        Los resortes helicoidales y otros elementos sometidos a esfuerzos cíclicos no son eternos. Tras
-        miles de compresiones y extensiones, el material puede perder parte de su capacidad elástica y
-        modificar la altura de rodaje del vehículo. Esto repercute en el centro de gravedad, en la
-        geometría de suspensión y en la eficiencia de frenado y estabilidad del eje afectado.
+        El resorte soporta parte del peso del vehículo y absorbe energía cuando la rueda pasa sobre una irregularidad.
+        Sin embargo, si el vehículo solo tuviera resortes, rebotaría repetidamente después de cada impacto. El
+        amortiguador se encarga de controlar esa oscilación y disipar energía mediante resistencia hidráulica.
       </p>
 
-      <h2 id="cap5">Capítulo 5: Suspensión Electrónica y Magnética</h2>
+      <section class="split-block reverse">
+        <div class="split-text">
+          <h3>Función del amortiguador</h3>
+          <p>
+            El amortiguador convierte parte de la energía cinética del movimiento en calor dentro del fluido hidráulico.
+            Esto reduce el rebote de la carrocería y mantiene el neumático más estable sobre el pavimento. Cuando un
+            amortiguador pierde eficiencia, el vehículo puede sentirse flotante, hundirse excesivamente al frenar o
+            balancearse más de lo normal en curvas.
+          </p>
+
+          <p>
+            Esta pérdida de control no solo afecta comodidad. También puede aumentar la distancia de frenado, reducir
+            estabilidad en maniobras evasivas y acelerar el desgaste de neumáticos. Por eso, el mantenimiento del
+            sistema de suspensión no debe dejarse únicamente para cuando aparecen ruidos evidentes.
+          </p>
+        </div>
+
+        <figure class="split-media">
+          <img src="assets/img/suspension/amortiguador-resorte.png" alt="Amortiguador y resorte de suspensión explicando control de oscilación">
+          <figcaption>
+            El resorte almacena energía y el amortiguador la disipa. La combinación correcta controla compresión,
+            rebote y estabilidad.
+          </figcaption>
+        </figure>
+      </section>
+
+      <div class="tech-note">
+        <strong>Modelo simplificado:</strong> la fuerza de amortiguación puede expresarse como <em>F = -cẋ</em>,
+        donde <em>c</em> representa el coeficiente de amortiguamiento y <em>ẋ</em> la velocidad del pistón. Si el
+        amortiguador está gastado, el sistema pierde capacidad de controlar el movimiento.
+      </div>
+
+      <h2 id="cap4">Capítulo 4: Tipos de Suspensión Automotriz</h2>
+
       <p>
-        La evolución tecnológica ha llevado a sistemas semiactivos y activos capaces de variar su respuesta
-        en tiempo real. Los amortiguadores magnetoreológicos, por ejemplo, utilizan fluidos con partículas
-        metálicas cuya viscosidad puede modificarse mediante campos electromagnéticos. Esto permite adaptar
-        la dureza del sistema en milisegundos según velocidad, maniobra y estado del camino.
+        Existen varios tipos de suspensión automotriz, y cada diseño responde a objetivos diferentes de costo,
+        confort, espacio, estabilidad y desempeño. No todos los vehículos necesitan la misma arquitectura: un auto
+        urbano prioriza economía y simplicidad, mientras que un vehículo deportivo o de gama alta puede utilizar
+        sistemas más complejos para controlar mejor la geometría de las ruedas.
       </p>
 
-      <h2 id="cap6">Capítulo 6: Sistemas Multi-Link vs. Eje de Torsión</h2>
       <p>
-        La arquitectura del eje trasero condiciona gran parte del comportamiento dinámico del vehículo.
-        El eje de torsión es robusto, compacto y económico, pero limita la independencia cinemática entre
-        ruedas. La suspensión multi-link, en cambio, permite un control mucho más fino de convergencia,
-        caída y trayectoria de la rueda durante el recorrido, mejorando estabilidad, confort y capacidad
-        de absorción sobre superficies variables.
+        Entre los tipos de sistema de suspensión más comunes se encuentran la suspensión McPherson, el eje de torsión,
+        la suspensión independiente, la suspensión multi-link, los sistemas de doble horquilla y, en vehículos más
+        avanzados, suspensiones neumáticas, adaptativas o electrónicas. La suspensión independiente permite que cada
+        rueda responda con menor interferencia respecto a la otra, mejorando el confort y el contacto con el suelo
+        en superficies irregulares.
       </p>
 
-      <h2 id="cap7">Capítulo 7: Barras Estabilizadoras y Control de Balanceo</h2>
+      <h3>4.1 Suspensión independiente y eje de torsión</h3>
+
       <p>
-        La barra estabilizadora funciona como un resorte torsional que conecta ambos lados del eje y se
-        opone al rolido de la carrocería en curva. Su eficacia depende también del estado de bieletas,
-        anclajes y bujes. Cuando estos componentes presentan holgura, la capacidad del sistema para
-        controlar balanceo disminuye y se incrementa la transferencia lateral percibida por el conductor.
+        La suspensión independiente es valorada porque cada rueda puede moverse con mayor autonomía. Esto mejora la
+        estabilidad y la absorción de irregularidades, especialmente en curvas o caminos deteriorados. En cambio, el
+        eje de torsión es una solución más simple y económica, común en muchos vehículos compactos. Aunque puede ser
+        robusto y eficiente, ofrece menor control geométrico en comparación con sistemas multi-link.
       </p>
 
-      <h2 id="cap8">Capítulo 8: Transferencia de Pesos y Dinámica de Frenado</h2>
+      <h3>4.2 Suspensión y transmisión: sistemas diferentes</h3>
+
       <p>
-        Durante la frenada, la masa del vehículo se transfiere hacia el eje delantero. Si la suspensión
-        delantera está fatigada o mal amortiguada, el hundimiento del morro será excesivo, la geometría
-        cambiará de forma no prevista y el eje trasero perderá parte de su carga vertical útil. El resultado
-        puede ser una frenada menos estable, mayor distancia de detención y peor control direccional.
+        Algunas búsquedas mezclan dudas sobre suspensión con preguntas como cuántos tipos de transmisión tienen los
+        vehículos. Aunque ambos sistemas forman parte de la arquitectura automotriz, cumplen funciones distintas.
+        La transmisión gestiona cómo llega el torque del motor a las ruedas, mientras que la suspensión controla cómo
+        esas ruedas se apoyan y reaccionan frente al camino.
       </p>
 
-      <h2 id="cap9">Capítulo 9: Fatiga de Metales y Seguridad Pasiva</h2>
+      <h2 id="cap5">Capítulo 5: Geometría, Alineación y Estabilidad</h2>
+
       <p>
-        Los brazos de control, soportes, muelles y elementos metálicos de suspensión trabajan bajo cargas
-        alternantes constantes. La fatiga de materiales no siempre es visible a simple vista, pero puede
-        manifestarse mediante microfisuras, deformación progresiva o pérdida de rigidez. Un mantenimiento
-        preventivo serio incluye inspección visual, verificación dimensional y revisión de corrosión,
-        especialmente en vehículos expuestos a humedad, sal o caminos degradados.
+        La suspensión no trabaja únicamente en movimiento vertical. También define ángulos críticos de alineación
+        que afectan estabilidad, desgaste de neumáticos y respuesta de dirección. Camber, caster y toe determinan
+        cómo se apoya la rueda y cómo se comporta el vehículo cuando acelera, frena o gira.
       </p>
 
-      <h2 id="cap10">Capítulo 10: Conclusión Técnica</h2>
+      <section class="split-block">
+        <div class="split-text">
+          <h3>Camber, caster y toe</h3>
+          <p>
+            El camber o caída es la inclinación de la rueda respecto a la vertical. Un valor incorrecto puede generar
+            desgaste interno o externo del neumático. El caster o avance influye en la estabilidad direccional y en
+            el retorno del volante al centro. El toe o convergencia determina si las ruedas apuntan ligeramente hacia
+            dentro o hacia fuera.
+          </p>
+
+          <p>
+            Cuando existe desgaste en bujes, rótulas o brazos, estos ángulos pueden cambiar bajo carga aunque la
+            alineación estática parezca correcta. Por eso, una alineación efectiva requiere que el sistema de suspensión
+            esté mecánicamente sano.
+          </p>
+        </div>
+
+        <figure class="split-media">
+          <img src="assets/img/suspension/alineacion-geometria.png" alt="Geometría de alineación en suspensión automotriz con camber caster y toe">
+          <figcaption>
+            La geometría de alineación determina cómo apoya el neumático. Camber, caster y toe influyen directamente
+            en estabilidad y desgaste.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="split-block reverse">
+        <div class="split-text">
+          <h3>Barra estabilizadora y control de balanceo</h3>
+          <p>
+            La barra estabilizadora conecta ambos lados de un eje y se opone al balanceo excesivo de la carrocería
+            en curvas. Su función es reducir inclinación lateral y mejorar sensación de control. Sin embargo, su
+            eficacia depende del estado de bieletas y bujes. Si estos elementos tienen juego, la barra pierde parte
+            de su capacidad de trabajo.
+          </p>
+
+          <p>
+            Un síntoma frecuente de bieletas dañadas es el ruido tipo golpeteo al pasar por irregularidades pequeñas.
+            Aunque parezca un detalle menor, puede indicar pérdida de rigidez en un componente que afecta el control
+            lateral del vehículo.
+          </p>
+        </div>
+
+        <figure class="split-media">
+          <img src="assets/img/suspension/barra-estabilizadora.png" alt="Barra estabilizadora del sistema de suspensión y control de balanceo lateral">
+          <figcaption>
+            La barra estabilizadora reduce el rolido en curva. Bieletas y bujes en mal estado disminuyen su eficacia.
+          </figcaption>
+        </figure>
+      </section>
+
+      <h2 id="cap6">Capítulo 6: Mantenimiento del Sistema de Suspensión Paso a Paso</h2>
+
       <p>
-        Comprender la suspensión significa comprender una parte central de la seguridad del automóvil.
-        Cada buje, rótula, brazo, resorte y amortiguador participa en el equilibrio entre confort,
-        estabilidad y capacidad de respuesta. Mantener la suspensión en estado óptimo no es solo una
-        cuestión de comodidad: es preservar la ingeniería dinámica que permite al vehículo frenar,
-        girar y apoyar correctamente en condiciones reales de uso.
+        El mantenimiento del sistema de suspensión paso a paso debe incluir inspección visual, prueba de manejo,
+        revisión de fugas, evaluación de ruidos, verificación de holguras y análisis del desgaste de neumáticos.
+        Muchas personas buscan mantenimiento del sistema de suspensión PDF para tener una guía de revisión, pero
+        lo esencial es comprender qué se debe observar y por qué cada síntoma importa.
       </p>
+
+      <section class="split-block">
+        <div class="split-text">
+          <h3>Inspección preventiva</h3>
+          <p>
+            La inspección debe comenzar con el vehículo en una superficie segura. Se revisan fugas de aceite en
+            amortiguadores, estado de guardapolvos, grietas en bujes, corrosión, tornillería floja, holguras en
+            rótulas y desgaste irregular en neumáticos. También debe observarse la altura del vehículo, ya que un
+            resorte vencido puede reducir la distancia al suelo y alterar la geometría.
+          </p>
+
+          <p>
+            El mantenimiento de suspensión de bicicleta comparte la idea básica de revisar articulaciones, holguras
+            y absorción de impactos, pero en un automóvil las cargas son mucho mayores y los efectos sobre frenado,
+            dirección y estabilidad son más críticos. Por eso, cualquier juego excesivo debe corregirse antes de
+            realizar alineación o reemplazo de neumáticos.
+          </p>
+        </div>
+
+        <figure class="split-media">
+          <img src="assets/img/suspension/mantenimiento-suspension.png" alt="Mantenimiento del sistema de suspensión paso a paso con revisión de bujes amortiguadores y neumáticos">
+          <figcaption>
+            El mantenimiento preventivo permite detectar fugas, grietas, holguras y desgaste antes de que afecten
+            la seguridad del vehículo.
+          </figcaption>
+        </figure>
+      </section>
+
+      <ol>
+        <li><strong>Revisar amortiguadores:</strong> buscar fugas, deformaciones, golpes o pérdida de control en rebote.</li>
+        <li><strong>Inspeccionar bujes:</strong> verificar grietas, endurecimiento, separación del caucho o desplazamientos anormales.</li>
+        <li><strong>Comprobar rótulas y terminales:</strong> detectar juego axial, radial o ruidos al girar y pasar irregularidades.</li>
+        <li><strong>Observar neumáticos:</strong> analizar desgaste irregular como señal de geometría alterada o piezas fatigadas.</li>
+        <li><strong>Verificar barra estabilizadora:</strong> revisar bieletas, bujes y anclajes.</li>
+        <li><strong>Realizar alineación:</strong> solo después de confirmar que no hay holguras mecánicas importantes.</li>
+      </ol>
+
+      <div class="tech-note">
+        <strong>Importante:</strong> alinear un vehículo con piezas de suspensión dañadas es una solución temporal.
+        La geometría puede cambiar nuevamente bajo carga si existen bujes rotos, rótulas flojas o amortiguadores
+        fatigados.
+      </div>
+
+      <h2 id="cap7">Capítulo 7: Precio, Diagnóstico y Conclusión Técnica</h2>
+
+      <p>
+        La búsqueda suspensión de carro precio es común porque los costos pueden variar bastante. El precio depende
+        del tipo de vehículo, número de piezas afectadas, marca de repuestos, mano de obra, necesidad de alineación
+        y complejidad del sistema. No cuesta lo mismo reemplazar una bieleta que cambiar amortiguadores, brazos de
+        control, bujes y copelas.
+      </p>
+
+      <p>
+        También debe considerarse que el diagnóstico correcto evita gastos innecesarios. Un ruido en suspensión no
+        siempre significa amortiguador dañado; puede originarse en bujes, rótulas, terminales, bieletas, copelas o
+        incluso soportes del motor. Por eso, antes de comprar repuestos, conviene realizar una inspección completa.
+      </p>
+
+      <section class="split-block reverse">
+        <div class="split-text">
+          <h3>Antes y después de un sistema en buen estado</h3>
+          <p>
+            Una suspensión fatigada puede provocar rebote excesivo, pérdida de estabilidad, desgaste irregular de
+            neumáticos, ruidos y mayor distancia de frenado. Después de una intervención correcta, el vehículo
+            recupera control de oscilación, apoyo más estable y mejor respuesta de dirección.
+          </p>
+
+          <p>
+            El objetivo del mantenimiento no es solo eliminar ruidos. Es conservar la ingeniería dinámica del
+            vehículo. Una suspensión en buen estado protege neumáticos, mejora frenado y permite que la dirección
+            trabaje con mayor precisión.
+          </p>
+        </div>
+
+        <figure class="split-media">
+          <img src="assets/img/suspension/antes-despues-suspension.png" alt="Comparación antes y después de mantenimiento de suspensión automotriz">
+          <figcaption>
+            Un sistema de suspensión sano mejora el contacto del neumático, reduce rebotes y permite una conducción
+            más estable y segura.
+          </figcaption>
+        </figure>
+      </section>
+
+      <div class="tech-note">
+        <strong>Conclusión técnica:</strong> la suspensión de un auto no debe evaluarse únicamente por comodidad.
+        Es un sistema de seguridad activa que influye en frenado, dirección, estabilidad y desgaste de neumáticos.
+        Comprender sus partes, tipos y mantenimiento permite detectar fallas antes de que comprometan el control
+        del vehículo.
+      </div>
 
       <section class="faq-section">
         <h2>Enlaces de navegación técnica</h2>
         <div id="faq-engine-container"></div>
       </section>
+
     </main>
 
     <aside class="ad-rail">
