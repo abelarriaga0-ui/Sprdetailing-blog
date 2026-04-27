@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Frenos ABS: Funcionamiento, Partes, Fallas y Soluciones | Detailing Pro</title>
+  <meta name="description" content="Guía técnica completa sobre frenos ABS, funcionamiento del sistema ABS y sus partes, función ABS frenos, fallas comunes, testigo ABS en el tablero, diagnóstico y soluciones.">
+
+  <link rel="stylesheet" href="assets/css/theme.css">
+
+  <style>
+    .cover-image {
+      max-width: 620px;
+      margin: 28px auto 42px;
+    }
+
+    .cover-image img {
+      width: 100%;
+      max-height: 320px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    @media (max-width: 820px) {
+      .cover-image {
+        max-width: 100%;
+      }
+
+      .cover-image img {
+        max-height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="site-header"></div>
+
+  <section class="page-hero">
+    <div class="hero-inner">
+      <span class="hero-kicker">Seguridad activa automotriz</span>
+      <h1>Frenos ABS: Funcionamiento, Partes, Fallas y Soluciones</h1>
+      <p>
+        Guía técnica completa sobre el sistema antibloqueo de frenos, sensores de velocidad,
+        módulo hidráulico, testigo ABS en el tablero y diagnóstico de fallas.
+      </p>
+    </div>
+  </section>
+
+  <div class="page-grid">
+    <aside class="ad-rail">
+      <div class="ad-box">Espacio reservado para publicidad</div>
+    </aside>
+
+    <main class="article-shell">
+
+      <p class="lead-intro">
+        Los frenos ABS son uno de los sistemas de seguridad activa más importantes del vehículo moderno.
+        Su nombre proviene de <strong>Anti-lock Braking System</strong>, es decir, sistema antibloqueo de frenos.
+        La función ABS frenos consiste en evitar que las ruedas se bloqueen durante una frenada intensa,
+        permitiendo que el conductor conserve mayor capacidad de dirección y control. En esta guía se explica
+        qué son los frenos ABS, cómo funcionan, cuáles son sus componentes, qué significa ABS en el tablero
+        del carro, cuáles son las fallas más comunes y cómo debe abordarse un diagnóstico profesional.
+      </p>
+
+      <figure class="figure-card cover-image">
+        <img src="assets/img/frenos-abs/hero-frenos-abs.png" alt="Sistema de frenos ABS en vehículo con módulo hidráulico y control de frenado">
+        <figcaption>
+          El sistema ABS actúa durante frenadas críticas modulando la presión hidráulica para reducir el bloqueo
+          de las ruedas y mantener mayor capacidad de maniobra.
+        </figcaption>
+      </figure>
+
+      <div class="quick-index">
+        <h3>Contenido del artículo</h3>
+        <ul>
+          <li><a href="#cap1">Capítulo 1: Qué son los frenos ABS y cuál es su función</a></li>
+          <li><a href="#cap2">Capítulo 2: Funcionamiento del sistema ABS y sus partes</a></li>
+          <li><a href="#cap3">Capítulo 3: Diagrama de frenos ABS y módulo hidráulico</a></li>
+          <li><a href="#cap4">Capítulo 4: Frenado sin ABS vs frenado con ABS</a></li>
+          <li><a href="#cap5">Capítulo 5: Qué significa ABS en el tablero del carro</a></li>
+          <li><a href="#cap6">Capítulo 6: Fallas frenos ABS y soluciones</a></li>
+          <li><a href="#cap7">Capítulo 7: Tipos de sistema ABS y ABS en motos</a></li>
+          <li><a href="#cap8">Capítulo 8: Mantenimiento, diagnóstico y conclusión técnica</a></li>
+        </ul>
+      </div>
+
+      <h2 id="cap1">Capítulo 1: Qué son los Frenos ABS y cuál es su Función</h2>
+
+      <p>
+        Para comprender qué son los frenos ABS, primero debe entenderse qué ocurre cuando una rueda se bloquea.
+        Durante una frenada de emergencia, el conductor puede aplicar una fuerza elevada sobre el pedal. Si la
+        presión hidráulica supera la capacidad de adherencia entre neumático y pavimento, la rueda deja de girar
+        y comienza a deslizar. En ese momento, el neumático ya no rueda de forma controlada, sino que patina sobre
+        la superficie.
+      </p>
+
+      <p>
+        Una rueda bloqueada reduce la capacidad de dirección. Aunque el conductor gire el volante, el vehículo
+        puede continuar en línea recta porque el neumático perdió parte de su capacidad de generar fuerza lateral.
+        Aquí aparece la función ABS frenos: detectar el inicio del bloqueo y modular la presión de frenado muchas
+        veces por segundo para que la rueda siga girando dentro de un rango útil.
+      </p>
+
+      <p>
+        En términos simples, el ABS no tiene como objetivo principal hacer que el vehículo siempre frene en menor
+        distancia en cualquier superficie. Su mayor valor está en permitir que el conductor mantenga control
+        direccional durante una frenada fuerte. En asfalto seco puede ayudar a optimizar la frenada, pero en
+        superficies como grava, tierra suelta o nieve, la distancia puede variar. Aun así, la capacidad de esquivar
+        un obstáculo suele ser mucho mejor con ABS que con ruedas completamente bloqueadas.
+      </p>
+
+      <div class="tech-note">
+        <strong>Idea clave:</strong> el ABS no reemplaza neumáticos en buen estado, líquido de frenos adecuado ni
+        mantenimiento del sistema hidráulico. Es un sistema de control que trabaja sobre la presión de frenado, pero
+        depende de que los componentes mecánicos y eléctricos estén en condiciones correctas.
+      </div>
+
+      <h2 id="cap2">Capítulo 2: Funcionamiento del Sistema ABS y sus Partes</h2>
+
+      <p>
+        El funcionamiento del sistema ABS y sus partes se basa en tres acciones principales: medir la velocidad de
+        cada rueda, interpretar si existe riesgo de bloqueo y modificar la presión hidráulica del freno en la rueda
+        afectada. Este proceso ocurre de forma automática, sin que el conductor tenga que bombear el pedal.
+      </p>
+
+      <p>
+        Cuando se habla de sistema de frenos ABS componentes, normalmente se hace referencia a sensores de velocidad
+        de rueda, corona fónica o anillo reluctor, unidad electrónica de control, módulo hidráulico, bomba de retorno,
+        electroválvulas, cableado, fusibles, líneas hidráulicas, cilindro maestro, cálipers o mordazas, discos,
+        pastillas y líquido de frenos. Aunque el ABS es un sistema electrónico-hidráulico, su funcionamiento depende
+        también del estado físico de los frenos convencionales.
+      </p>
+
+      <section class="split-block">
+        <div class="split-text">
+          <h3>Sensores de velocidad de rueda</h3>
+          <p>
+            Cada rueda equipada con ABS cuenta con un sensor que mide su velocidad de giro. Ese sensor puede ser
+            inductivo o de efecto Hall, dependiendo del diseño del vehículo. Su señal permite que la unidad de control
+            compare el comportamiento de las ruedas entre sí. Si una rueda reduce su velocidad de forma demasiado
+            rápida respecto a las demás, el sistema interpreta que está cerca del bloqueo.
+          </p>
+
+          <p>
+            Un sensor sucio, dañado, desconectado o con cableado interrumpido puede generar fallas frenos ABS y
+            encender el testigo en el tablero. Por eso, antes de culpar al módulo hidráulico, siempre debe revisarse
+            el estado de sensores, conectores y anillos de lectura.
+          </p>
+        </div>
+
+        <figure class="split-media">
+          <img src="assets/img/frenos-abs/sensor-velocidad-abs.png" alt="Sensor de velocidad ABS y corona fónica en rueda del vehículo">
+          <figcaption>
+            El sensor de velocidad informa a la unidad ABS si una rueda está reduciendo su giro de forma anormal
+            durante una frenada.
+          </figcaption>
+        </figure>
+      </section>
+
+      <p>
+        La unidad electrónica del ABS recibe señales de los sensores y calcula si debe intervenir. Si detecta riesgo
+        de bloqueo, ordena al módulo hidráulico modificar la presión. Esta intervención puede sentirse en el pedal
+        como una vibración o pulsación rápida. Ese comportamiento es normal durante una frenada de emergencia con
+        ABS activo.
+      </p>
+
+      <h2 id="cap3">Capítulo 3: Diagrama de Frenos ABS y Módulo Hidráulico</h2>
+
+      <p>
+        Un diagrama de frenos ABS básico incluye el pedal de freno, servofreno, cilindro maestro, líneas hidráulicas,
+        módulo ABS, sensores de velocidad y frenos en cada rueda. En condiciones normales, el sistema permite que la
+        presión hidráulica llegue a los cálipers como en un sistema convencional. La diferencia aparece cuando la
+        unidad ABS detecta una tendencia de bloqueo y decide modular esa presión.
+      </p>
+
+      <section class="split-block reverse">
+        <div class="split-text">
+          <h3>Módulo hidráulico y electroválvulas</h3>
+          <p>
+            El módulo hidráulico es uno de los componentes más importantes del sistema. En su interior existen
+            canales de fluido, electroválvulas y una bomba. Las electroválvulas pueden mantener, liberar o aumentar
+            presión según la orden de la unidad electrónica. Esta modulación permite que la rueda recupere giro sin
+            que el conductor suelte completamente el pedal.
+          </p>
+
+          <p>
+            En una frenada crítica, el proceso puede repetirse muchas veces por segundo. El conductor solo debe
+            mantener presión firme y constante sobre el pedal, mientras el sistema gestiona la presión hidráulica.
+            Por eso, en vehículos con ABS, no se recomienda bombear el pedal durante una emergencia como se hacía
+            antiguamente en vehículos sin antibloqueo.
+          </p>
+        </div>
+
+        <figure class="split-media">
+          <img src="assets/img/frenos-abs/modulo-hidraulico-abs.png" alt="Módulo hidráulico ABS con bomba, electroválvulas y canales de presión">
+          <figcaption>
+            El módulo hidráulico ABS regula la presión que llega a cada rueda para reducir bloqueo y conservar
+            control direccional.
+          </figcaption>
+        </figure>
+      </section>
+
+      <div class="tech-note">
+        <strong>Funcionamiento técnico:</strong> el ABS trabaja en ciclos de presión. Puede reducir presión para que
+        la rueda vuelva a girar, mantenerla si el giro es estable o aumentarla si todavía hay capacidad de frenado
+        disponible.
+      </div>
+
+      <h2 id="cap4">Capítulo 4: Frenado sin ABS vs Frenado con ABS</h2>
+
+      <p>
+        La diferencia entre un frenado sin ABS y un frenado con ABS se aprecia especialmente en maniobras de emergencia.
+        En un vehículo sin ABS, si el conductor pisa el freno con demasiada fuerza, una o varias ruedas pueden bloquearse.
+        Cuando eso ocurre, la trayectoria se vuelve difícil de corregir y el vehículo puede deslizarse hacia el obstáculo.
+      </p>
+
+      <section class="split-block">
+        <div class="split-text">
+          <h3>Qué pasa cuando una rueda se bloquea</h3>
+          <p>
+            Una rueda bloqueada pierde capacidad de rodadura. En vez de girar y permitir que el dibujo del neumático
+            trabaje, la goma se arrastra sobre el pavimento. Esto genera calor, desgaste localizado y pérdida de control.
+            En superficies mojadas, la situación se agrava porque la adherencia disponible es menor.
+          </p>
+
+          <p>
+            Si el conductor intenta esquivar mientras las ruedas delanteras están bloqueadas, la respuesta de dirección
+            será muy limitada. Esa es una de las razones por las que el sistema ABS se considera una tecnología de
+            seguridad activa: no solo ayuda a frenar, también ayuda a conservar capacidad de maniobra.
+          </p>
+        </div>
+
+        <figure class="split-media">
+          <img src="assets/img/frenos-abs/frenado-sin-abs.png" alt="Comparación técnica de frenado sin ABS con rueda bloqueada y pérdida de dirección">
+          <figcaption>
+            Sin ABS, el bloqueo de rueda puede provocar derrape y pérdida de control direccional durante una frenada
+            de emergencia.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="split-block reverse">
+        <div class="split-text">
+          <h3>Cómo actúa el ABS durante una frenada crítica</h3>
+          <p>
+            Con ABS activo, el sistema detecta la desaceleración excesiva de una rueda y libera presión de forma
+            momentánea. Luego vuelve a aplicar presión si la rueda recupera giro. Este ciclo ocurre rápidamente,
+            generando la sensación de pulsación en el pedal. Esa vibración no significa que el sistema esté fallando;
+            significa que está interviniendo.
+          </p>
+
+          <p>
+            La ventaja práctica es que el neumático se mantiene más cerca de una condición de rodadura controlada.
+            Esto permite que el conductor frene y gire al mismo tiempo con mayor probabilidad de mantener la trayectoria.
+          </p>
+        </div>
+
+        <figure class="split-media">
+          <img src="assets/img/frenos-abs/frenado-con-abs.png" alt="Frenado con ABS manteniendo control de dirección y modulación de presión">
+          <figcaption>
+            Con ABS, la presión se modula para reducir bloqueo y permitir que el vehículo conserve mayor capacidad
+            de dirección.
+          </figcaption>
+        </figure>
+      </section>
+
+      <h2 id="cap5">Capítulo 5: Qué significa ABS en el Tablero del Carro</h2>
+
+      <p>
+        Una de las dudas más frecuentes es qué significa ABS en el tablero del carro. Cuando el testigo ABS se enciende
+        y permanece encendido, indica que la unidad de control detectó una anomalía en el sistema antibloqueo. Esto no
+        siempre significa que el vehículo se quedó sin frenos, pero sí significa que la función antibloqueo podría estar
+        desactivada o limitada.
+      </p>
+
+      <section class="split-block">
+        <div class="split-text">
+          <h3>Testigo ABS encendido</h3>
+          <p>
+            El testigo puede encenderse por múltiples causas: sensor de rueda dañado, cable cortado, anillo reluctor
+            sucio o roto, bajo voltaje de batería, fusible defectuoso, problema en el módulo hidráulico, falla de
+            comunicación o incluso bajo nivel de líquido de frenos en algunos sistemas relacionados.
+          </p>
+
+          <p>
+            Mucha gente busca cómo quitar el ABS del tablero, pero lo correcto no es simplemente borrar la luz. Quitar
+            el aviso sin reparar la causa puede ocultar un problema de seguridad. El procedimiento correcto es escanear,
+            leer códigos de falla, revisar datos en vivo, reparar el componente afectado y recién después borrar el
+            código de avería si corresponde.
+          </p>
+        </div>
+
+        <figure class="split-media">
+          <img src="assets/img/frenos-abs/testigo-abs-tablero.png" alt="Testigo ABS encendido en el tablero del carro indicando falla en sistema antibloqueo">
+          <figcaption>
+            El testigo ABS encendido indica una falla detectada. Borrar la luz sin diagnóstico no soluciona el problema
+            y puede ocultar una condición insegura.
+          </figcaption>
+        </figure>
+      </section>
+
+      <div class="tech-note">
+        <strong>Advertencia de seguridad:</strong> si el testigo ABS está encendido, el sistema de freno convencional
+        puede seguir funcionando, pero la asistencia antibloqueo puede no estar disponible. Se debe diagnosticar lo
+        antes posible.
+      </div>
+
+      <h2 id="cap6">Capítulo 6: Fallas Frenos ABS y Soluciones</h2>
+
+      <p>
+        Las fallas frenos ABS pueden tener origen eléctrico, hidráulico, mecánico o electrónico. Por eso, un diagnóstico
+        serio no debe basarse en adivinanzas. La búsqueda “fallas y soluciones en el sistema de frenos ABS” suele llevar
+        a respuestas rápidas, pero en la práctica es necesario revisar el sistema por etapas.
+      </p>
+
+      <section class="split-block reverse">
+        <div class="split-text">
+          <h3>Diagnóstico con escáner y pruebas eléctricas</h3>
+          <p>
+            El primer paso para saber cómo arreglar el ABS de mi carro es leer los códigos de falla con un escáner
+            compatible. Un código puede indicar sensor delantero izquierdo, sensor trasero derecho, señal incoherente,
+            falla de bomba, problema de comunicación o alimentación eléctrica deficiente. Sin esa información, se corre
+            el riesgo de cambiar piezas innecesariamente.
+          </p>
+
+          <p>
+            Después de leer códigos, conviene observar datos en vivo. Si una rueda marca velocidad cero mientras las
+            demás registran movimiento, puede existir un problema en el sensor, cableado, conector o anillo de lectura.
+            También se debe revisar continuidad eléctrica, alimentación, resistencia del sensor cuando aplique y estado
+            físico de conectores expuestos a agua, polvo o golpes.
+          </p>
+        </div>
+
+        <figure class="split-media">
+          <img src="assets/img/frenos-abs/diagnostico-abs.png" alt="Diagnóstico de fallas ABS con escáner, códigos DTC y revisión eléctrica">
+          <figcaption>
+            El diagnóstico ABS debe combinar escáner, inspección física, datos en vivo y pruebas eléctricas antes de
+            reemplazar componentes.
+          </figcaption>
+        </figure>
+      </section>
+
+      <h3>6.1 Fallas comunes del sistema ABS</h3>
+
+      <p>
+        Una de las fallas más comunes es el sensor de velocidad dañado. También son frecuentes los cables partidos cerca
+        de la rueda, conectores sulfatados, anillos reluctores sucios, rodamientos con sensor integrado defectuoso o
+        problemas de bajo voltaje. En algunos casos, la falla puede estar en el módulo ABS, pero este diagnóstico debe
+        confirmarse antes de reemplazarlo, porque suele ser una pieza costosa.
+      </p>
+
+      <ul>
+        <li><strong>Sensor de rueda defectuoso:</strong> puede generar lectura intermitente o pérdida total de señal.</li>
+        <li><strong>Anillo reluctor dañado:</strong> produce señales erráticas aunque el sensor esté en buen estado.</li>
+        <li><strong>Cableado cortado:</strong> frecuente en zonas cercanas a ruedas por movimiento, agua o golpes.</li>
+        <li><strong>Bajo voltaje:</strong> una batería débil puede afectar módulos electrónicos, incluido el ABS.</li>
+        <li><strong>Fusible o relé defectuoso:</strong> puede dejar sin alimentación parte del sistema.</li>
+        <li><strong>Módulo hidráulico con falla:</strong> puede afectar bomba, válvulas o comunicación electrónica.</li>
+      </ul>
+
+      <h3>6.2 Cómo quitar el ABS del tablero correctamente</h3>
+
+      <p>
+        La forma correcta de quitar el ABS del tablero es reparar la causa que encendió el testigo. Borrar el código
+        con escáner sin solucionar la avería solo hará que la luz regrese. En algunos casos, después de reemplazar un
+        sensor o reparar un cable, el sistema puede apagar el testigo tras circular unos metros y confirmar señales
+        correctas. En otros casos, se requiere borrar el código manualmente con equipo de diagnóstico.
+      </p>
+
+      <p>
+        Si alguien busca cómo arreglar el ABS de mi carro, el orden lógico es: revisar fusibles, verificar batería,
+        escanear el módulo ABS, inspeccionar sensores, comprobar cableado, revisar anillos de lectura y confirmar que
+        el sistema hidráulico no tenga fallas. Solo después de ese proceso se puede hablar de una reparación confiable.
+      </p>
+
+      <h2 id="cap7">Capítulo 7: Tipos de Sistema ABS y ABS en Motos</h2>
+
+      <p>
+        Existen varios tipos de sistema ABS según el número de canales y sensores. Un sistema básico puede controlar
+        dos ruedas de forma conjunta, mientras que sistemas más avanzados utilizan cuatro sensores y cuatro canales,
+        permitiendo control independiente en cada rueda. En vehículos modernos, el ABS suele integrarse con control
+        de estabilidad, control de tracción y asistencia de frenado.
+      </p>
+
+      <h3>7.1 Tipos de ABS según canales</h3>
+
+      <p>
+        Un ABS de un canal puede actuar sobre un eje o rueda específica, mientras que uno de tres o cuatro canales
+        permite una modulación más precisa. En automóviles modernos, el sistema más completo suele incluir sensor en
+        cada rueda y control independiente de presión. Esto mejora la capacidad de adaptación durante frenadas en
+        superficies con adherencia desigual, por ejemplo, cuando un lado del vehículo pisa asfalto seco y el otro una
+        zona mojada.
+      </p>
+
+      <section class="split-block">
+        <div class="split-text">
+          <h3>Qué son frenos ABS en motos</h3>
+          <p>
+            La búsqueda “qué son frenos ABS en motos” es cada vez más común porque muchas motocicletas modernas ya
+            incorporan antibloqueo. En una moto, el ABS cumple la misma función general: evitar bloqueo de rueda
+            durante una frenada intensa. Sin embargo, la dinámica es más delicada porque el bloqueo de la rueda
+            delantera puede provocar pérdida rápida de estabilidad.
+          </p>
+
+          <p>
+            En motos, el ABS puede ser de un canal o dos canales. Un sistema de dos canales controla rueda delantera
+            y trasera por separado. Algunos modelos avanzados incluso incorporan ABS en curva, que considera la
+            inclinación de la moto mediante sensores inerciales para modular la frenada de forma más sofisticada.
+          </p>
+        </div>
+
+        <figure class="split-media">
+          <img src="assets/img/frenos-abs/frenos-abs-motos.png" alt="Sistema de frenos ABS en motos con sensores en ruedas y módulo antibloqueo">
+          <figcaption>
+            En motos, el ABS reduce el riesgo de bloqueo durante frenadas de emergencia y mejora la estabilidad,
+            especialmente en superficies de baja adherencia.
+          </figcaption>
+        </figure>
+      </section>
+
+      <div class="tech-note">
+        <strong>Dato técnico:</strong> el ABS no permite frenar sin técnica ni elimina las leyes físicas. Su función
+        es ampliar el margen de control, pero la distancia de seguridad, el estado de neumáticos y la calidad del
+        pavimento siguen siendo determinantes.
+      </div>
+
+      <h2 id="cap8">Capítulo 8: Mantenimiento, Diagnóstico y Conclusión Técnica</h2>
+
+      <p>
+        El mantenimiento del sistema ABS no debe separarse del mantenimiento general de frenos. Un vehículo con discos
+        deformados, pastillas cristalizadas, líquido contaminado o neumáticos desgastados no frenará correctamente
+        aunque el ABS esté operativo. El sistema antibloqueo ayuda a controlar presión, pero no compensa completamente
+        componentes mecánicos en mal estado.
+      </p>
+
+      <p>
+        Es recomendable revisar periódicamente el nivel y estado del líquido de frenos, inspeccionar sensores en cada
+        rueda, mantener conectores limpios, evitar golpes en cables cercanos al cubo de rueda y atender cualquier luz
+        ABS en el tablero. También conviene recordar que después de trabajos en rodamientos, suspensión o frenos, un
+        cable de sensor mal colocado puede terminar rozando y fallando con el movimiento de la rueda.
+      </p>
+
+      <h3>8.1 Procedimiento preventivo recomendado</h3>
+
+      <ol>
+        <li><strong>Revisar el tablero:</strong> confirmar si el testigo ABS enciende al dar contacto y se apaga al arrancar.</li>
+        <li><strong>Inspeccionar sensores:</strong> revisar conectores, cableado y fijación cerca de cada rueda.</li>
+        <li><strong>Verificar frenos base:</strong> comprobar discos, pastillas, cálipers, mangueras y líquido de frenos.</li>
+        <li><strong>Escanear códigos:</strong> leer fallas almacenadas si el testigo permanece encendido.</li>
+        <li><strong>Analizar datos en vivo:</strong> verificar que todas las ruedas reporten velocidad coherente.</li>
+        <li><strong>Reparar antes de borrar:</strong> eliminar la causa del problema antes de borrar códigos.</li>
+      </ol>
+
+      <p>
+        En conclusión, los frenos ABS son una pieza fundamental de la seguridad activa. Comprender el funcionamiento
+        del sistema ABS y sus partes permite interpretar mejor las fallas, evitar diagnósticos apresurados y mantener
+        el vehículo en condiciones más seguras. Si el testigo ABS aparece en el tablero, no debe ignorarse ni taparse:
+        debe diagnosticarse. Un sistema ABS operativo puede marcar la diferencia entre una frenada controlada y una
+        pérdida de dirección en una situación crítica.
+      </p>
+
+      <div class="tech-note">
+        <strong>Conclusión técnica:</strong> el ABS no es solo un accesorio electrónico. Es un sistema hidráulico,
+        mecánico y digital que trabaja en milisegundos para conservar estabilidad durante frenadas exigentes. Su
+        mantenimiento correcto requiere sensores en buen estado, frenos base eficientes, líquido hidráulico adecuado
+        y diagnóstico preciso ante cualquier falla.
+      </div>
+
+      <section class="faq-section">
+        <h2>Enlaces de navegación técnica</h2>
+        <div id="faq-engine-container"></div>
+      </section>
+
+    </main>
+
+    <aside class="ad-rail">
+      <div class="ad-box">Espacio reservado para publicidad</div>
+    </aside>
+  </div>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/site-shell.js"></script>
+  <script src="assets/js/faq-engine.js"></script>
+</body>
+</html>
