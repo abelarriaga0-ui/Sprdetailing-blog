@@ -2,25 +2,43 @@ function getCurrentPage() {
   return window.location.pathname.split('/').pop() || 'index.html';
 }
 
-function renderSiteHeader() {
+async function getCategoriesFromBlogs() {
+  try {
+    const response = await fetch('blogs.json');
+    const blogs = await response.json();
+
+    return [...new Set(
+      blogs
+        .map(blog => blog.categoria)
+        .filter(Boolean)
+    )];
+  } catch (error) {
+    console.error('Error cargando categorías:', error);
+    return ['Mecánica', 'Detailing', 'Exterior'];
+  }
+}
+
+async function renderSiteHeader() {
   const container = document.getElementById('site-header');
   if (!container) return;
 
   const current = getCurrentPage();
+  const categories = await getCategoriesFromBlogs();
 
   const navLinks = [
     { label: 'Inicio', url: 'index.html' },
-    { label: 'Biblioteca', url: 'index.html#guias-tecnicas' },
+    { label: 'Biblioteca', url: 'biblioteca.html' },
     { label: 'Contacto', url: 'contacto.html' }
   ];
 
   const navHTML = navLinks.map(link => {
-    const isHomeActive = current === 'index.html' && link.url === 'index.html';
-    const isContactActive = current === 'contacto.html' && link.url === 'contacto.html';
-    const activeClass = isHomeActive || isContactActive ? 'active' : '';
-
+    const activeClass = current === link.url ? 'active' : '';
     return `<a href="${link.url}" class="${activeClass}">${link.label}</a>`;
   }).join('');
+
+  const categoryHTML = categories.map(category => `
+    <a href="biblioteca.html?categoria=${encodeURIComponent(category)}">${category}</a>
+  `).join('');
 
   container.innerHTML = `
     <header class="site-header">
@@ -39,15 +57,13 @@ function renderSiteHeader() {
             </button>
 
             <div class="nav-dropdown-menu">
-              <a href="index.html#categoria-mecanica">Mecánica</a>
-              <a href="index.html#categoria-detailing">Detailing</a>
-              <a href="index.html#categoria-exterior">Exterior</a>
-              <a href="index.html#categoria-seguridad">Seguridad</a>
+              <a href="biblioteca.html">Todas las guías</a>
+              ${categoryHTML}
             </div>
           </div>
         </nav>
 
-        <a href="index.html#guias-tecnicas" class="header-cta">Explorar guías</a>
+        <a href="biblioteca.html" class="header-cta">Explorar guías</a>
       </div>
     </header>
   `;
@@ -96,12 +112,10 @@ function renderSiteFooter() {
         <div class="footer-links">
           <h4>Secciones</h4>
           <a href="index.html">Inicio</a>
-          <a href="index.html#guias-tecnicas">Biblioteca técnica</a>
-          <a href="mantenimiento-inyectores.html">Inyectores</a>
-          <a href="limpieza-tapiceria.html">Tapicería</a>
-          <a href="faros.html">Faros</a>
-          <a href="pulido-pintura.html">Pulido</a>
-          <a href="suspension.html">Suspensión</a>
+          <a href="biblioteca.html">Biblioteca técnica</a>
+          <a href="biblioteca.html?categoria=Mecánica">Mecánica</a>
+          <a href="biblioteca.html?categoria=Detailing">Detailing</a>
+          <a href="biblioteca.html?categoria=Exterior">Exterior</a>
         </div>
 
         <div class="footer-links">
