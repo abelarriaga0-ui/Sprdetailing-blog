@@ -15,7 +15,10 @@ function renderSiteHeader() {
   ];
 
   const navHTML = navLinks.map(link => {
-    const activeClass = current === link.url ? 'active' : '';
+    const isHomeActive = current === 'index.html' && link.url === 'index.html';
+    const isContactActive = current === 'contacto.html' && link.url === 'contacto.html';
+    const activeClass = isHomeActive || isContactActive ? 'active' : '';
+
     return `<a href="${link.url}" class="${activeClass}">${link.label}</a>`;
   }).join('');
 
@@ -30,8 +33,11 @@ function renderSiteHeader() {
         <nav class="main-nav">
           ${navHTML}
 
-          <div class="nav-dropdown">
-            <button class="nav-dropdown-btn" type="button">Categorías ▾</button>
+          <div class="nav-dropdown" id="categoryDropdown">
+            <button class="nav-dropdown-btn" type="button" aria-expanded="false">
+              Categorías ▾
+            </button>
+
             <div class="nav-dropdown-menu">
               <a href="index.html#categoria-mecanica">Mecánica</a>
               <a href="index.html#categoria-detailing">Detailing</a>
@@ -45,6 +51,31 @@ function renderSiteHeader() {
       </div>
     </header>
   `;
+
+  activateCategoryDropdown();
+}
+
+function activateCategoryDropdown() {
+  const dropdown = document.getElementById('categoryDropdown');
+  if (!dropdown) return;
+
+  const button = dropdown.querySelector('.nav-dropdown-btn');
+
+  button.addEventListener('click', (event) => {
+    event.stopPropagation();
+
+    const isOpen = dropdown.classList.toggle('open');
+    button.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+
+  document.addEventListener('click', () => {
+    dropdown.classList.remove('open');
+    button.setAttribute('aria-expanded', 'false');
+  });
+
+  dropdown.addEventListener('click', (event) => {
+    event.stopPropagation();
+  });
 }
 
 function renderSiteFooter() {
