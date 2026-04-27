@@ -28,5 +28,53 @@
     "descripcion": "Análisis técnico sobre camber, convergencia, transferencia de carga y estabilidad del vehículo.",
     "url": "suspension.html",
     "categoria": "Mecánica"
+  },
+  {
+    "titulo": "¿Cómo funciona el sistema de frenos ABS?",
+    "descripcion": "Análisis técnico del antibloqueo de frenos, sensores de velocidad, módulo hidráulico y control de estabilidad.",
+    "url": "frenos-abs.html",
+    "categoria": "Seguridad"
+  },
+  {
+    "titulo": "¿Cuándo cambiar el líquido de frenos?",
+    "descripcion": "Guía técnica sobre humedad, punto de ebullición, degradación del fluido hidráulico y seguridad de frenado.",
+    "url": "liquido-frenos.html",
+    "categoria": "Mecánica"
+  },
+  {
+    "titulo": "¿Cómo cuidar una transmisión automática?",
+    "descripcion": "Estudio técnico sobre fluido ATF, convertidor de par, desgaste interno y mantenimiento preventivo de cajas automáticas.",
+    "url": "transmision-automatica.html",
+    "categoria": "Mecánica"
+  },
+  {
+    "titulo": "¿Cómo funciona un motor turboalimentado?",
+    "descripcion": "Fundamentos de presión de sobrealimentación, turbina, compresor, intercooler, lubricación y eficiencia térmica.",
+    "url": "turboalimentacion.html",
+    "categoria": "Mecánica"
+  },
+  {
+    "titulo": "¿Cómo diagnosticar batería y alternador?",
+    "descripcion": "Guía sobre voltaje, corriente de carga, sulfato en bornes, caída de tensión y fallas eléctricas comunes.",
+    "url": "bateria-alternador.html",
+    "categoria": "Electricidad"
+  },
+  {
+    "titulo": "¿Cómo lavar un auto correctamente sin rayar la pintura?",
+    "descripcion": "Método técnico de lavado seguro, prelavado, técnica de dos baldes, lubricación y reducción de swirls.",
+    "url": "lavado-tecnico.html",
+    "categoria": "Detailing"
+  },
+  {
+    "titulo": "¿Qué es un coating cerámico y cómo protege la pintura?",
+    "descripcion": "Explicación técnica sobre SiO₂, energía superficial, repelencia al agua, curado y protección química.",
+    "url": "coating-ceramico.html",
+    "categoria": "Detailing"
+  },
+  {
+    "titulo": "¿Cómo descontaminar la pintura antes de pulir?",
+    "descripcion": "Guía sobre descontaminación férrica, clay bar, alquitrán, resina, preparación de superficie y corrección segura.",
+    "url": "descontaminacion-pintura.html",
+    "categoria": "Detailing"
   }
 ]
